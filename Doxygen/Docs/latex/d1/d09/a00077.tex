@@ -1,0 +1,130 @@
+\hypertarget{a00077}{}\doxysection{C\+:/hw3/\+Localization\+Example/\+Localization\+Example/translate.c File Reference}
+\label{a00077}\index{C:/hw3/LocalizationExample/LocalizationExample/translate.c@{C:/hw3/LocalizationExample/LocalizationExample/translate.c}}
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}translate.\+h\char`\"{}}\newline
+Include dependency graph for translate.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/da4/a00078}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{a00077_af08ec37a8c99d747fb60fa15bc28678b}{\+\_\+\+CRT\+\_\+\+SECURE\+\_\+\+NO\+\_\+\+WARNINGS}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{a00077_ac5bbbaceaa2ed0f4ecd032d9c7b44dc6}{get\+Id}} (char $\ast$line)
+\item 
+char $\ast$ \mbox{\hyperlink{a00077_a4bef7fcd77387ad8eb01c34e643ac1a4}{get\+Id\+String}} (char $\ast$line)
+\item 
+void \mbox{\hyperlink{a00077_a1bd34356be85e028ce33d6cbdb598d81}{fix\+File}} (FILE $\ast$fptr, bool close)
+\item 
+void \mbox{\hyperlink{a00077_af406e98bb980ef06830d84221e422e8c}{set\+Translate\+Lang}} (char $\ast$str, bool save)
+\item 
+void \mbox{\hyperlink{a00077_a8a2139ed5925d8a2875d0ad21a16ebc1}{get\+Translate\+Lang}} (char $\ast$\mbox{\hyperlink{a00014_a8f2006d9a33e9dd3efa67b044125163a}{lang}})
+\item 
+void \mbox{\hyperlink{a00077_a9870e78005075b848f0b1baf1469eac6}{print\+Translate\+Lang}} (int id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{a00077_a32d2739bba0160b118d36024b0ff9708}{app\+\_\+language}} = \mbox{\hyperlink{a00083_a23eeb5d0926f79ae261914c8f2747e52}{APP\+\_\+\+LANG\+\_\+\+EN}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{a00077_af08ec37a8c99d747fb60fa15bc28678b}\label{a00077_af08ec37a8c99d747fb60fa15bc28678b}} 
+\index{translate.c@{translate.c}!\_CRT\_SECURE\_NO\_WARNINGS@{\_CRT\_SECURE\_NO\_WARNINGS}}
+\index{\_CRT\_SECURE\_NO\_WARNINGS@{\_CRT\_SECURE\_NO\_WARNINGS}!translate.c@{translate.c}}
+\doxysubsubsection{\texorpdfstring{\_CRT\_SECURE\_NO\_WARNINGS}{\_CRT\_SECURE\_NO\_WARNINGS}}
+{\footnotesize\ttfamily \#define \+\_\+\+CRT\+\_\+\+SECURE\+\_\+\+NO\+\_\+\+WARNINGS}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{a00077_a1bd34356be85e028ce33d6cbdb598d81}\label{a00077_a1bd34356be85e028ce33d6cbdb598d81}} 
+\index{translate.c@{translate.c}!fixFile@{fixFile}}
+\index{fixFile@{fixFile}!translate.c@{translate.c}}
+\doxysubsubsection{\texorpdfstring{fixFile()}{fixFile()}}
+{\footnotesize\ttfamily void fix\+File (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fptr,  }\item[{bool}]{close }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00080_aeb94b30adf286a24d8bfedb747fd6f40}{ENGLISH\+\_\+L}}, and \mbox{\hyperlink{a00080_afa3b4760fe6328d36aec0289b9f1936b}{LANG\+\_\+\+CONF\+\_\+\+FILE}}.
+
+\mbox{\Hypertarget{a00077_ac5bbbaceaa2ed0f4ecd032d9c7b44dc6}\label{a00077_ac5bbbaceaa2ed0f4ecd032d9c7b44dc6}} 
+\index{translate.c@{translate.c}!getId@{getId}}
+\index{getId@{getId}!translate.c@{translate.c}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int get\+Id (\begin{DoxyParamCaption}\item[{char $\ast$}]{line }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00077_a4bef7fcd77387ad8eb01c34e643ac1a4}\label{a00077_a4bef7fcd77387ad8eb01c34e643ac1a4}} 
+\index{translate.c@{translate.c}!getIdString@{getIdString}}
+\index{getIdString@{getIdString}!translate.c@{translate.c}}
+\doxysubsubsection{\texorpdfstring{getIdString()}{getIdString()}}
+{\footnotesize\ttfamily char $\ast$ get\+Id\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{line }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00077_a8a2139ed5925d8a2875d0ad21a16ebc1}\label{a00077_a8a2139ed5925d8a2875d0ad21a16ebc1}} 
+\index{translate.c@{translate.c}!getTranslateLang@{getTranslateLang}}
+\index{getTranslateLang@{getTranslateLang}!translate.c@{translate.c}}
+\doxysubsubsection{\texorpdfstring{getTranslateLang()}{getTranslateLang()}}
+{\footnotesize\ttfamily void get\+Translate\+Lang (\begin{DoxyParamCaption}\item[{char $\ast$}]{lang }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00080_aeb94b30adf286a24d8bfedb747fd6f40}{ENGLISH\+\_\+L}}, \mbox{\hyperlink{a00074_a1bd34356be85e028ce33d6cbdb598d81}{fix\+File()}}, \mbox{\hyperlink{a00014_a8f2006d9a33e9dd3efa67b044125163a}{lang()}}, and \mbox{\hyperlink{a00080_afa3b4760fe6328d36aec0289b9f1936b}{LANG\+\_\+\+CONF\+\_\+\+FILE}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/d09/a00077_a8a2139ed5925d8a2875d0ad21a16ebc1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00077_a9870e78005075b848f0b1baf1469eac6}\label{a00077_a9870e78005075b848f0b1baf1469eac6}} 
+\index{translate.c@{translate.c}!printTranslateLang@{printTranslateLang}}
+\index{printTranslateLang@{printTranslateLang}!translate.c@{translate.c}}
+\doxysubsubsection{\texorpdfstring{printTranslateLang()}{printTranslateLang()}}
+{\footnotesize\ttfamily void print\+Translate\+Lang (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00080_a23eeb5d0926f79ae261914c8f2747e52}{APP\+\_\+\+LANG\+\_\+\+EN}}, \mbox{\hyperlink{a00080_ad4e050d97358e37d47a175ac5490606f}{APP\+\_\+\+LANG\+\_\+\+TR}}, \mbox{\hyperlink{a00074_a32d2739bba0160b118d36024b0ff9708}{app\+\_\+language}}, \mbox{\hyperlink{a00080_a06a0531214032739e1cbd49d6c797610}{EN\+\_\+\+LANG\+\_\+\+FILE}}, \mbox{\hyperlink{a00014_a358d2e2397ca11ccd17553e3c40e7901}{exit()}}, \mbox{\hyperlink{a00074_ac5bbbaceaa2ed0f4ecd032d9c7b44dc6}{get\+Id()}}, \mbox{\hyperlink{a00074_a4bef7fcd77387ad8eb01c34e643ac1a4}{get\+Id\+String()}}, and \mbox{\hyperlink{a00080_a747b69dd4abbf5741008ce4d84411358}{TR\+\_\+\+LANG\+\_\+\+FILE}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{d1/d09/a00077_a9870e78005075b848f0b1baf1469eac6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00077_af406e98bb980ef06830d84221e422e8c}\label{a00077_af406e98bb980ef06830d84221e422e8c}} 
+\index{translate.c@{translate.c}!setTranslateLang@{setTranslateLang}}
+\index{setTranslateLang@{setTranslateLang}!translate.c@{translate.c}}
+\doxysubsubsection{\texorpdfstring{setTranslateLang()}{setTranslateLang()}}
+{\footnotesize\ttfamily void set\+Translate\+Lang (\begin{DoxyParamCaption}\item[{char $\ast$}]{str,  }\item[{bool}]{save }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00080_a23eeb5d0926f79ae261914c8f2747e52}{APP\+\_\+\+LANG\+\_\+\+EN}}, \mbox{\hyperlink{a00080_ad4e050d97358e37d47a175ac5490606f}{APP\+\_\+\+LANG\+\_\+\+TR}}, \mbox{\hyperlink{a00074_a32d2739bba0160b118d36024b0ff9708}{app\+\_\+language}}, \mbox{\hyperlink{a00080_aeb94b30adf286a24d8bfedb747fd6f40}{ENGLISH\+\_\+L}}, \mbox{\hyperlink{a00080_afa3b4760fe6328d36aec0289b9f1936b}{LANG\+\_\+\+CONF\+\_\+\+FILE}}, and \mbox{\hyperlink{a00080_a468f6418a4c8d248d1f83a290ef8f440}{TURKISH\+\_\+L}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{a00077_a32d2739bba0160b118d36024b0ff9708}\label{a00077_a32d2739bba0160b118d36024b0ff9708}} 
+\index{translate.c@{translate.c}!app\_language@{app\_language}}
+\index{app\_language@{app\_language}!translate.c@{translate.c}}
+\doxysubsubsection{\texorpdfstring{app\_language}{app\_language}}
+{\footnotesize\ttfamily int app\+\_\+language = \mbox{\hyperlink{a00083_a23eeb5d0926f79ae261914c8f2747e52}{APP\+\_\+\+LANG\+\_\+\+EN}}}
+

@@ -1,0 +1,2481 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\comment begin body}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/hw3/MedicalStoreManagement/MedicalStoreManagement/MedicalStoreManagement.c File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/hw3/MedicalStoreManagement/MedicalStoreManagement/MedicalStoreManagement.c}
+{\xe \v C:/hw3/MedicalStoreManagement/MedicalStoreManagement/MedicalStoreManagement.c}
+{\bkmkstart AAAAAAAAGR}
+{\bkmkend AAAAAAAAGR}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdio.h>}\par
+{\f2 #include <conio.h>}\par
+{\f2 #include <string.h>}\par
+{\f2 #include <math.h>}\par
+{\f2 #include <dos.h>}\par
+{\f2 #include <time.h>}\par
+{\f2 #include <ctype.h>}\par
+{\f2 #include <windows.h>}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for MedicalStoreManagement.c:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d79/a00030.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Structures\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGS" }{}}{\fldrslt {\cs37\ul\cf2 medical}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGT" }{}}{\fldrslt {\cs37\ul\cf2 supplier}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGU" }{}}{\fldrslt {\cs37\ul\cf2 customer}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABQ" }{}}{\fldrslt {\cs37\ul\cf2 bill}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGV" }{}}{\fldrslt {\cs37\ul\cf2 sales_report}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGW" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGX" }{}}{\fldrslt {\cs37\ul\cf2 profit_report}}}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGY" }{}}{\fldrslt {\cs37\ul\cf2 _CRT_SECURE_NO_WARNINGS}}}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy}}}
+ (int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 x}}}
+, int y)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHA" }{}}{\fldrslt {\cs37\ul\cf2 getcust_id}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHB" }{}}{\fldrslt {\cs37\ul\cf2 getsupp_id}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHC" }{}}{\fldrslt {\cs37\ul\cf2 welcome}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHD" }{}}{\fldrslt {\cs37\ul\cf2 main_box}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHE" }{}}{\fldrslt {\cs37\ul\cf2 box1}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHF" }{}}{\fldrslt {\cs37\ul\cf2 wbox}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHG" }{}}{\fldrslt {\cs37\ul\cf2 bill}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHH" }{}}{\fldrslt {\cs37\ul\cf2 about}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHI" }{}}{\fldrslt {\cs37\ul\cf2 medicine}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 medi_sale}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 stock}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADT" }{}}{\fldrslt {\cs37\ul\cf2 update_stock}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHK" }{}}{\fldrslt {\cs37\ul\cf2 medi_entry}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADK" }{}}{\fldrslt {\cs37\ul\cf2 medi_search}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHL" }{}}{\fldrslt {\cs37\ul\cf2 remainderQty}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHM" }{}}{\fldrslt {\cs37\ul\cf2 supplier}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADR" }{}}{\fldrslt {\cs37\ul\cf2 supp_entry}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADS" }{}}{\fldrslt {\cs37\ul\cf2 supp_list}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADQ" }{}}{\fldrslt {\cs37\ul\cf2 sup_update}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHN" }{}}{\fldrslt {\cs37\ul\cf2 search}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHO" }{}}{\fldrslt {\cs37\ul\cf2 search_id}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHP" }{}}{\fldrslt {\cs37\ul\cf2 search_name}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHQ" }{}}{\fldrslt {\cs37\ul\cf2 customer}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHR" }{}}{\fldrslt {\cs37\ul\cf2 cust_search}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHS" }{}}{\fldrslt {\cs37\ul\cf2 search_cid}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHT" }{}}{\fldrslt {\cs37\ul\cf2 search_cname}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 cust_entry}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADI" }{}}{\fldrslt {\cs37\ul\cf2 cust_list}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADJ" }{}}{\fldrslt {\cs37\ul\cf2 cust_update}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHU" }{}}{\fldrslt {\cs37\ul\cf2 report_menu}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHV" }{}}{\fldrslt {\cs37\ul\cf2 report}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADN" }{}}{\fldrslt {\cs37\ul\cf2 sale_rpt}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 sale_rpt_daily}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHW" }{}}{\fldrslt {\cs37\ul\cf2 profit_rpt}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADL" }{}}{\fldrslt {\cs37\ul\cf2 pur_rpt}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADM" }{}}{\fldrslt {\cs37\ul\cf2 pur_rpt_daily}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHX" }{}}{\fldrslt {\cs37\ul\cf2 linkfloat}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 t}}}
+ (void)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHZ" }{}}{\fldrslt {\cs37\ul\cf2 animation}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIA" }{}}{\fldrslt {\cs37\ul\cf2 ventry}}}
+ (char {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 t}}}
+[], int code)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 lbox}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAID" }{}}{\fldrslt {\cs37\ul\cf2 main}}}
+ ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+COORD {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIE" }{}}{\fldrslt {\cs37\ul\cf2 coord}}}
+ = \{ 0, 0 \}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGS" }{}}{\fldrslt {\cs37\ul\cf2 medical}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIF" }{}}{\fldrslt {\cs37\ul\cf2 temp}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGS" }{}}{\fldrslt {\cs37\ul\cf2 medical}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 x}}}
+ [20]\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+FILE * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIG" }{}}{\fldrslt {\cs37\ul\cf2 ptr}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACE" }{}}{\fldrslt {\cs37\ul\cf2 a}}}
+ [10]\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGT" }{}}{\fldrslt {\cs37\ul\cf2 supplier}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIH" }{}}{\fldrslt {\cs37\ul\cf2 temp1}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGU" }{}}{\fldrslt {\cs37\ul\cf2 customer}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAII" }{}}{\fldrslt {\cs37\ul\cf2 temp_c}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+FILE * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIJ" }{}}{\fldrslt {\cs37\ul\cf2 ptr1}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABQ" }{}}{\fldrslt {\cs37\ul\cf2 bill}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIK" }{}}{\fldrslt {\cs37\ul\cf2 bil}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+FILE * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIL" }{}}{\fldrslt {\cs37\ul\cf2 ptrbill}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGV" }{}}{\fldrslt {\cs37\ul\cf2 sales_report}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIM" }{}}{\fldrslt {\cs37\ul\cf2 s_r}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+FILE * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIN" }{}}{\fldrslt {\cs37\ul\cf2 ptrs_r}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGW" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIO" }{}}{\fldrslt {\cs37\ul\cf2 p_r}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+FILE * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIP" }{}}{\fldrslt {\cs37\ul\cf2 ptrp_r}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGX" }{}}{\fldrslt {\cs37\ul\cf2 profit_report}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIQ" }{}}{\fldrslt {\cs37\ul\cf2 pr_r}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+FILE * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIR" }{}}{\fldrslt {\cs37\ul\cf2 ptrpr_r}}}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macro Definition Documentation\par
+\pard\plain 
+{\xe \v _CRT_SECURE_NO_WARNINGS\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:_CRT_SECURE_NO_WARNINGS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define _CRT_SECURE_NO_WARNINGS}}
+\par
+{\bkmkstart AAAAAAAAGY}
+{\bkmkend AAAAAAAAGY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v about\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:about}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void about ()}}
+\par
+{\bkmkstart AAAAAAAAHH}
+{\bkmkend AAAAAAAAHH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHZ" }{}}{\fldrslt {\cs37\ul\cf2 animation()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a789158f29284880f41199bede88272e3_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a789158f29284880f41199bede88272e3_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v animation\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:animation}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void animation ()}}
+\par
+{\bkmkstart AAAAAAAAHZ}
+{\bkmkend AAAAAAAAHZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHH" }{}}{\fldrslt {\cs37\ul\cf2 about()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHR" }{}}{\fldrslt {\cs37\ul\cf2 cust_search()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHQ" }{}}{\fldrslt {\cs37\ul\cf2 customer()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHN" }{}}{\fldrslt {\cs37\ul\cf2 search()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 stock()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHM" }{}}{\fldrslt {\cs37\ul\cf2 supplier()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a039d55c986652a41321402fe8e41baa5_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a039d55c986652a41321402fe8e41baa5_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v bill\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:bill}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABQ" }{}}{\fldrslt {\cs37\ul\cf2 bill}}}
+ ()}}
+\par
+{\bkmkstart AAAAAAAAHG}
+{\bkmkend AAAAAAAAHG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIK" }{}}{\fldrslt {\cs37\ul\cf2 bil}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIS" }{}}{\fldrslt {\cs37\ul\cf2 bill::billno}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIT" }{}}{\fldrslt {\cs37\ul\cf2 bill::cname}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIU" }{}}{\fldrslt {\cs37\ul\cf2 bill::day}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIV" }{}}{\fldrslt {\cs37\ul\cf2 bill::medi_qty}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIW" }{}}{\fldrslt {\cs37\ul\cf2 bill::medi_rate}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIX" }{}}{\fldrslt {\cs37\ul\cf2 bill::mediname}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIY" }{}}{\fldrslt {\cs37\ul\cf2 bill::month}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIL" }{}}{\fldrslt {\cs37\ul\cf2 ptrbill}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIZ" }{}}{\fldrslt {\cs37\ul\cf2 bill::total}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJA" }{}}{\fldrslt {\cs37\ul\cf2 bill::year}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_adf0f03a768c327f84e6c1749ea46d448_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_adf0f03a768c327f84e6c1749ea46d448_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v box\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:box}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void box ()}}
+\par
+{\bkmkstart AAAAAAAAIB}
+{\bkmkend AAAAAAAAIB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHG" }{}}{\fldrslt {\cs37\ul\cf2 bill()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 cust_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADI" }{}}{\fldrslt {\cs37\ul\cf2 cust_list()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADJ" }{}}{\fldrslt {\cs37\ul\cf2 cust_update()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHK" }{}}{\fldrslt {\cs37\ul\cf2 medi_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 medi_sale()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADK" }{}}{\fldrslt {\cs37\ul\cf2 medi_search()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHW" }{}}{\fldrslt {\cs37\ul\cf2 profit_rpt()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADL" }{}}{\fldrslt {\cs37\ul\cf2 pur_rpt()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADM" }{}}{\fldrslt {\cs37\ul\cf2 pur_rpt_daily()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADN" }{}}{\fldrslt {\cs37\ul\cf2 sale_rpt()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 sale_rpt_daily()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHS" }{}}{\fldrslt {\cs37\ul\cf2 search_cid()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHT" }{}}{\fldrslt {\cs37\ul\cf2 search_cname()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHO" }{}}{\fldrslt {\cs37\ul\cf2 search_id()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHP" }{}}{\fldrslt {\cs37\ul\cf2 search_name()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 stock()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADQ" }{}}{\fldrslt {\cs37\ul\cf2 sup_update()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADR" }{}}{\fldrslt {\cs37\ul\cf2 supp_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADS" }{}}{\fldrslt {\cs37\ul\cf2 supp_list()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADT" }{}}{\fldrslt {\cs37\ul\cf2 update_stock()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a74086c19c4e1eba47228ef1e62227e50_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a74086c19c4e1eba47228ef1e62227e50_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v box1\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:box1}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void box1 ()}}
+\par
+{\bkmkstart AAAAAAAAHE}
+{\bkmkend AAAAAAAAHE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a9e518ba024db6fc9ff8d69bdc4d75f79_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a9e518ba024db6fc9ff8d69bdc4d75f79_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v cust_entry\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:cust_entry}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void cust_entry ()}}
+\par
+{\bkmkstart AAAAAAAADH}
+{\bkmkend AAAAAAAADH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJB" }{}}{\fldrslt {\cs37\ul\cf2 customer::city}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJC" }{}}{\fldrslt {\cs37\ul\cf2 customer::cust_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJD" }{}}{\fldrslt {\cs37\ul\cf2 customer::cust_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJE" }{}}{\fldrslt {\cs37\ul\cf2 customer::email}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 exit()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHA" }{}}{\fldrslt {\cs37\ul\cf2 getcust_id()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 lbox()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJF" }{}}{\fldrslt {\cs37\ul\cf2 customer::mob_no}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 t()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAII" }{}}{\fldrslt {\cs37\ul\cf2 temp_c}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIA" }{}}{\fldrslt {\cs37\ul\cf2 ventry()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHQ" }{}}{\fldrslt {\cs37\ul\cf2 customer()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a1ed6b5480572a72f1d9714aea6539108_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a1ed6b5480572a72f1d9714aea6539108_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v cust_list\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:cust_list}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void cust_list ()}}
+\par
+{\bkmkstart AAAAAAAADI}
+{\bkmkend AAAAAAAADI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJB" }{}}{\fldrslt {\cs37\ul\cf2 customer::city}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJC" }{}}{\fldrslt {\cs37\ul\cf2 customer::cust_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJD" }{}}{\fldrslt {\cs37\ul\cf2 customer::cust_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJE" }{}}{\fldrslt {\cs37\ul\cf2 customer::email}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 exit()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 lbox()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJF" }{}}{\fldrslt {\cs37\ul\cf2 customer::mob_no}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIJ" }{}}{\fldrslt {\cs37\ul\cf2 ptr1}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAII" }{}}{\fldrslt {\cs37\ul\cf2 temp_c}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHQ" }{}}{\fldrslt {\cs37\ul\cf2 customer()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_ae5545c8c6e7283029407cd2d721f39f6_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_ae5545c8c6e7283029407cd2d721f39f6_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v cust_search\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:cust_search}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void cust_search ()}}
+\par
+{\bkmkstart AAAAAAAAHR}
+{\bkmkend AAAAAAAAHR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHZ" }{}}{\fldrslt {\cs37\ul\cf2 animation()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHQ" }{}}{\fldrslt {\cs37\ul\cf2 customer()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHD" }{}}{\fldrslt {\cs37\ul\cf2 main_box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHS" }{}}{\fldrslt {\cs37\ul\cf2 search_cid()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHT" }{}}{\fldrslt {\cs37\ul\cf2 search_cname()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHQ" }{}}{\fldrslt {\cs37\ul\cf2 customer()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_ae10f58ce141ddadfb762cff282943a88_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_ae10f58ce141ddadfb762cff282943a88_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v cust_update\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:cust_update}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void cust_update ()}}
+\par
+{\bkmkstart AAAAAAAADJ}
+{\bkmkend AAAAAAAADJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJB" }{}}{\fldrslt {\cs37\ul\cf2 customer::city}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJC" }{}}{\fldrslt {\cs37\ul\cf2 customer::cust_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJD" }{}}{\fldrslt {\cs37\ul\cf2 customer::cust_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJE" }{}}{\fldrslt {\cs37\ul\cf2 customer::email}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 exit()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 lbox()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJF" }{}}{\fldrslt {\cs37\ul\cf2 customer::mob_no}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIJ" }{}}{\fldrslt {\cs37\ul\cf2 ptr1}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAII" }{}}{\fldrslt {\cs37\ul\cf2 temp_c}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIA" }{}}{\fldrslt {\cs37\ul\cf2 ventry()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHQ" }{}}{\fldrslt {\cs37\ul\cf2 customer()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a20aeb1971c3cc4b65916cf9bae9ba161_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a20aeb1971c3cc4b65916cf9bae9ba161_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v customer\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:customer}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGU" }{}}{\fldrslt {\cs37\ul\cf2 customer}}}
+ ()}}
+\par
+{\bkmkstart AAAAAAAAHQ}
+{\bkmkend AAAAAAAAHQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHZ" }{}}{\fldrslt {\cs37\ul\cf2 animation()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 cust_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADI" }{}}{\fldrslt {\cs37\ul\cf2 cust_list()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHR" }{}}{\fldrslt {\cs37\ul\cf2 cust_search()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADJ" }{}}{\fldrslt {\cs37\ul\cf2 cust_update()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHD" }{}}{\fldrslt {\cs37\ul\cf2 main_box()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHR" }{}}{\fldrslt {\cs37\ul\cf2 cust_search()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_af71a1ee5c7b8b225825e744376c3dc2a_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_af71a1ee5c7b8b225825e744376c3dc2a_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v getcust_id\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:getcust_id}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int getcust_id ()}}
+\par
+{\bkmkstart AAAAAAAAHA}
+{\bkmkend AAAAAAAAHA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJB" }{}}{\fldrslt {\cs37\ul\cf2 customer::city}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJC" }{}}{\fldrslt {\cs37\ul\cf2 customer::cust_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJD" }{}}{\fldrslt {\cs37\ul\cf2 customer::cust_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJE" }{}}{\fldrslt {\cs37\ul\cf2 customer::email}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJF" }{}}{\fldrslt {\cs37\ul\cf2 customer::mob_no}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAII" }{}}{\fldrslt {\cs37\ul\cf2 temp_c}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 cust_entry()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a3a59181ef40c199703c86a98b9e84be6_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a3a59181ef40c199703c86a98b9e84be6_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v getsupp_id\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:getsupp_id}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int getsupp_id ()}}
+\par
+{\bkmkstart AAAAAAAAHB}
+{\bkmkend AAAAAAAAHB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJG" }{}}{\fldrslt {\cs37\ul\cf2 supplier::city}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJH" }{}}{\fldrslt {\cs37\ul\cf2 supplier::email}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJI" }{}}{\fldrslt {\cs37\ul\cf2 supplier::mob_no}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJJ" }{}}{\fldrslt {\cs37\ul\cf2 supplier::supp_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJK" }{}}{\fldrslt {\cs37\ul\cf2 supplier::supp_name}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIH" }{}}{\fldrslt {\cs37\ul\cf2 temp1}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADR" }{}}{\fldrslt {\cs37\ul\cf2 supp_entry()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_af785d65f8356a9b833b483d5e24b78cb_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_af785d65f8356a9b833b483d5e24b78cb_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v gotoxy\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:gotoxy}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void gotoxy (int  {\i x}, int  {\i y})}}
+\par
+{\bkmkstart AAAAAAAAGZ}
+{\bkmkend AAAAAAAAGZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIE" }{}}{\fldrslt {\cs37\ul\cf2 coord}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 x}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHH" }{}}{\fldrslt {\cs37\ul\cf2 about()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHZ" }{}}{\fldrslt {\cs37\ul\cf2 animation()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHG" }{}}{\fldrslt {\cs37\ul\cf2 bill()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHE" }{}}{\fldrslt {\cs37\ul\cf2 box1()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 cust_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADI" }{}}{\fldrslt {\cs37\ul\cf2 cust_list()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHR" }{}}{\fldrslt {\cs37\ul\cf2 cust_search()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADJ" }{}}{\fldrslt {\cs37\ul\cf2 cust_update()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHQ" }{}}{\fldrslt {\cs37\ul\cf2 customer()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHA" }{}}{\fldrslt {\cs37\ul\cf2 getcust_id()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHB" }{}}{\fldrslt {\cs37\ul\cf2 getsupp_id()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 lbox()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHD" }{}}{\fldrslt {\cs37\ul\cf2 main_box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHK" }{}}{\fldrslt {\cs37\ul\cf2 medi_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 medi_sale()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADK" }{}}{\fldrslt {\cs37\ul\cf2 medi_search()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHI" }{}}{\fldrslt {\cs37\ul\cf2 medicine()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHW" }{}}{\fldrslt {\cs37\ul\cf2 profit_rpt()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADL" }{}}{\fldrslt {\cs37\ul\cf2 pur_rpt()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADM" }{}}{\fldrslt {\cs37\ul\cf2 pur_rpt_daily()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHL" }{}}{\fldrslt {\cs37\ul\cf2 remainderQty()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHU" }{}}{\fldrslt {\cs37\ul\cf2 report_menu()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADN" }{}}{\fldrslt {\cs37\ul\cf2 sale_rpt()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 sale_rpt_daily()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHN" }{}}{\fldrslt {\cs37\ul\cf2 search()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHS" }{}}{\fldrslt {\cs37\ul\cf2 search_cid()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHT" }{}}{\fldrslt {\cs37\ul\cf2 search_cname()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHO" }{}}{\fldrslt {\cs37\ul\cf2 search_id()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHP" }{}}{\fldrslt {\cs37\ul\cf2 search_name()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 stock()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADQ" }{}}{\fldrslt {\cs37\ul\cf2 sup_update()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADR" }{}}{\fldrslt {\cs37\ul\cf2 supp_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADS" }{}}{\fldrslt {\cs37\ul\cf2 supp_list()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHM" }{}}{\fldrslt {\cs37\ul\cf2 supplier()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 t()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADT" }{}}{\fldrslt {\cs37\ul\cf2 update_stock()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHF" }{}}{\fldrslt {\cs37\ul\cf2 wbox()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHC" }{}}{\fldrslt {\cs37\ul\cf2 welcome()}}}
+.}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_ae824443b3f661414ba1f2718e17fe97d_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v lbox\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:lbox}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void lbox ()}}
+\par
+{\bkmkstart AAAAAAAAIC}
+{\bkmkend AAAAAAAAIC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 cust_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADI" }{}}{\fldrslt {\cs37\ul\cf2 cust_list()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADJ" }{}}{\fldrslt {\cs37\ul\cf2 cust_update()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHK" }{}}{\fldrslt {\cs37\ul\cf2 medi_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADK" }{}}{\fldrslt {\cs37\ul\cf2 medi_search()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHW" }{}}{\fldrslt {\cs37\ul\cf2 profit_rpt()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADL" }{}}{\fldrslt {\cs37\ul\cf2 pur_rpt()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADM" }{}}{\fldrslt {\cs37\ul\cf2 pur_rpt_daily()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADN" }{}}{\fldrslt {\cs37\ul\cf2 sale_rpt()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 sale_rpt_daily()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 stock()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADQ" }{}}{\fldrslt {\cs37\ul\cf2 sup_update()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADR" }{}}{\fldrslt {\cs37\ul\cf2 supp_entry()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADS" }{}}{\fldrslt {\cs37\ul\cf2 supp_list()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a9c5bfef579a494196b6100ab478c6681_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a9c5bfef579a494196b6100ab478c6681_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v linkfloat\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:linkfloat}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void linkfloat ()}}
+\par
+{\bkmkstart AAAAAAAAHX}
+{\bkmkend AAAAAAAAHX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v main\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:main}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int main ()}}
+\par
+{\bkmkstart AAAAAAAAID}
+{\bkmkend AAAAAAAAID}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v main_box\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:main_box}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void main_box ()}}
+\par
+{\bkmkstart AAAAAAAAHD}
+{\bkmkend AAAAAAAAHD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHR" }{}}{\fldrslt {\cs37\ul\cf2 cust_search()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHQ" }{}}{\fldrslt {\cs37\ul\cf2 customer()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHI" }{}}{\fldrslt {\cs37\ul\cf2 medicine()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHU" }{}}{\fldrslt {\cs37\ul\cf2 report_menu()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHN" }{}}{\fldrslt {\cs37\ul\cf2 search()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHM" }{}}{\fldrslt {\cs37\ul\cf2 supplier()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a48faeaeb1d8f8ed5927570474d6fe569_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a48faeaeb1d8f8ed5927570474d6fe569_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v main_menu\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:main_menu}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void main_menu ()}}
+\par
+{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHH" }{}}{\fldrslt {\cs37\ul\cf2 about()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHZ" }{}}{\fldrslt {\cs37\ul\cf2 animation()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHG" }{}}{\fldrslt {\cs37\ul\cf2 bill()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHE" }{}}{\fldrslt {\cs37\ul\cf2 box1()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHQ" }{}}{\fldrslt {\cs37\ul\cf2 customer()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 exit()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHD" }{}}{\fldrslt {\cs37\ul\cf2 main_box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHI" }{}}{\fldrslt {\cs37\ul\cf2 medicine()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHL" }{}}{\fldrslt {\cs37\ul\cf2 remainderQty()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHU" }{}}{\fldrslt {\cs37\ul\cf2 report_menu()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHM" }{}}{\fldrslt {\cs37\ul\cf2 supplier()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 t()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHH" }{}}{\fldrslt {\cs37\ul\cf2 about()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHQ" }{}}{\fldrslt {\cs37\ul\cf2 customer()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 d_mainmenu()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAID" }{}}{\fldrslt {\cs37\ul\cf2 main()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHI" }{}}{\fldrslt {\cs37\ul\cf2 medicine()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHU" }{}}{\fldrslt {\cs37\ul\cf2 report_menu()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 stock()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHM" }{}}{\fldrslt {\cs37\ul\cf2 supplier()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a885611589f6294afada89fe88362e863_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a885611589f6294afada89fe88362e863_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v medi_entry\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:medi_entry}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void medi_entry ()}}
+\par
+{\bkmkstart AAAAAAAAHK}
+{\bkmkend AAAAAAAAHK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACE" }{}}{\fldrslt {\cs37\ul\cf2 a}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJL" }{}}{\fldrslt {\cs37\ul\cf2 medical::cabnit}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJM" }{}}{\fldrslt {\cs37\ul\cf2 medical::comp_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJN" }{}}{\fldrslt {\cs37\ul\cf2 medical::cost}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJO" }{}}{\fldrslt {\cs37\ul\cf2 medical::exp_date}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJP" }{}}{\fldrslt {\cs37\ul\cf2 medical::id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 lbox()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJQ" }{}}{\fldrslt {\cs37\ul\cf2 medical::manu_date}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHK" }{}}{\fldrslt {\cs37\ul\cf2 medi_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJR" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::medi_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJS" }{}}{\fldrslt {\cs37\ul\cf2 medical::medi_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJT" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::medir_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIO" }{}}{\fldrslt {\cs37\ul\cf2 p_r}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIG" }{}}{\fldrslt {\cs37\ul\cf2 ptr}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIP" }{}}{\fldrslt {\cs37\ul\cf2 ptrp_r}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJU" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::qty}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJV" }{}}{\fldrslt {\cs37\ul\cf2 medical::quantity}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJW" }{}}{\fldrslt {\cs37\ul\cf2 medical::rack}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJX" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::rate}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJY" }{}}{\fldrslt {\cs37\ul\cf2 medical::sale}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJZ" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::sDay}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKA" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::sMonth}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKB" }{}}{\fldrslt {\cs37\ul\cf2 medical::supp_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKC" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::supp_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKD" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::sYear}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 t()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIF" }{}}{\fldrslt {\cs37\ul\cf2 temp}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKE" }{}}{\fldrslt {\cs37\ul\cf2 medical::total}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKF" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::total}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKG" }{}}{\fldrslt {\cs37\ul\cf2 medical::unit}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIA" }{}}{\fldrslt {\cs37\ul\cf2 ventry()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHK" }{}}{\fldrslt {\cs37\ul\cf2 medi_entry()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHI" }{}}{\fldrslt {\cs37\ul\cf2 medicine()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a2904e53727e9438de807065db95db971_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a2904e53727e9438de807065db95db971_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v medi_sale\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:medi_sale}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void medi_sale ()}}
+\par
+{\bkmkstart AAAAAAAAHJ}
+{\bkmkend AAAAAAAAHJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACE" }{}}{\fldrslt {\cs37\ul\cf2 a}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIK" }{}}{\fldrslt {\cs37\ul\cf2 bil}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIS" }{}}{\fldrslt {\cs37\ul\cf2 bill::billno}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKH" }{}}{\fldrslt {\cs37\ul\cf2 medical::bye}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJB" }{}}{\fldrslt {\cs37\ul\cf2 customer::city}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIT" }{}}{\fldrslt {\cs37\ul\cf2 bill::cname}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJN" }{}}{\fldrslt {\cs37\ul\cf2 medical::cost}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJC" }{}}{\fldrslt {\cs37\ul\cf2 customer::cust_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJD" }{}}{\fldrslt {\cs37\ul\cf2 customer::cust_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKI" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::cust_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIU" }{}}{\fldrslt {\cs37\ul\cf2 bill::day}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJE" }{}}{\fldrslt {\cs37\ul\cf2 customer::email}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJP" }{}}{\fldrslt {\cs37\ul\cf2 medical::id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKJ" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::medi_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKK" }{}}{\fldrslt {\cs37\ul\cf2 profit_report::medi_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJS" }{}}{\fldrslt {\cs37\ul\cf2 medical::medi_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIV" }{}}{\fldrslt {\cs37\ul\cf2 bill::medi_qty}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIW" }{}}{\fldrslt {\cs37\ul\cf2 bill::medi_rate}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIX" }{}}{\fldrslt {\cs37\ul\cf2 bill::mediname}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKL" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::medir_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKM" }{}}{\fldrslt {\cs37\ul\cf2 profit_report::medir_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJF" }{}}{\fldrslt {\cs37\ul\cf2 customer::mob_no}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIY" }{}}{\fldrslt {\cs37\ul\cf2 bill::month}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIQ" }{}}{\fldrslt {\cs37\ul\cf2 pr_r}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKN" }{}}{\fldrslt {\cs37\ul\cf2 profit_report::profit}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIG" }{}}{\fldrslt {\cs37\ul\cf2 ptr}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIJ" }{}}{\fldrslt {\cs37\ul\cf2 ptr1}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIR" }{}}{\fldrslt {\cs37\ul\cf2 ptrpr_r}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIN" }{}}{\fldrslt {\cs37\ul\cf2 ptrs_r}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKO" }{}}{\fldrslt {\cs37\ul\cf2 medical::qty}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKP" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::qty}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKQ" }{}}{\fldrslt {\cs37\ul\cf2 profit_report::qty}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJV" }{}}{\fldrslt {\cs37\ul\cf2 medical::quantity}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKR" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::rate}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKS" }{}}{\fldrslt {\cs37\ul\cf2 profit_report::rate}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIM" }{}}{\fldrslt {\cs37\ul\cf2 s_r}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJY" }{}}{\fldrslt {\cs37\ul\cf2 medical::sale}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKT" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::sDay}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKU" }{}}{\fldrslt {\cs37\ul\cf2 profit_report::sDay}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKV" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::sMonth}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKW" }{}}{\fldrslt {\cs37\ul\cf2 profit_report::sMonth}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKX" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::sYear}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKY" }{}}{\fldrslt {\cs37\ul\cf2 profit_report::sYear}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 t()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIF" }{}}{\fldrslt {\cs37\ul\cf2 temp}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAII" }{}}{\fldrslt {\cs37\ul\cf2 temp_c}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKE" }{}}{\fldrslt {\cs37\ul\cf2 medical::total}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIZ" }{}}{\fldrslt {\cs37\ul\cf2 bill::total}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::total}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKG" }{}}{\fldrslt {\cs37\ul\cf2 medical::unit}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALA" }{}}{\fldrslt {\cs37\ul\cf2 profit_report::unit}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIA" }{}}{\fldrslt {\cs37\ul\cf2 ventry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 x}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJA" }{}}{\fldrslt {\cs37\ul\cf2 bill::year}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHI" }{}}{\fldrslt {\cs37\ul\cf2 medicine()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_aa777bd026911bc07fa05f8a534573291_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_aa777bd026911bc07fa05f8a534573291_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v medi_search\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:medi_search}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void medi_search ()}}
+\par
+{\bkmkstart AAAAAAAADK}
+{\bkmkend AAAAAAAADK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 exit()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJO" }{}}{\fldrslt {\cs37\ul\cf2 medical::exp_date}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJP" }{}}{\fldrslt {\cs37\ul\cf2 medical::id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 lbox()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJS" }{}}{\fldrslt {\cs37\ul\cf2 medical::medi_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIJ" }{}}{\fldrslt {\cs37\ul\cf2 ptr1}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJV" }{}}{\fldrslt {\cs37\ul\cf2 medical::quantity}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKB" }{}}{\fldrslt {\cs37\ul\cf2 medical::supp_name}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIF" }{}}{\fldrslt {\cs37\ul\cf2 temp}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHI" }{}}{\fldrslt {\cs37\ul\cf2 medicine()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a834e67bf52e80b33d850e2ebc7533fb4_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a834e67bf52e80b33d850e2ebc7533fb4_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v medicine\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:medicine}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void medicine ()}}
+\par
+{\bkmkstart AAAAAAAAHI}
+{\bkmkend AAAAAAAAHI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHD" }{}}{\fldrslt {\cs37\ul\cf2 main_box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHK" }{}}{\fldrslt {\cs37\ul\cf2 medi_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 medi_sale()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADK" }{}}{\fldrslt {\cs37\ul\cf2 medi_search()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 stock()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a847ba849cf6bb3d5e048ad1f0daa35db_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a847ba849cf6bb3d5e048ad1f0daa35db_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v profit_rpt\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:profit_rpt}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void profit_rpt ()}}
+\par
+{\bkmkstart AAAAAAAAHW}
+{\bkmkend AAAAAAAAHW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 lbox()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKK" }{}}{\fldrslt {\cs37\ul\cf2 profit_report::medi_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKM" }{}}{\fldrslt {\cs37\ul\cf2 profit_report::medir_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIQ" }{}}{\fldrslt {\cs37\ul\cf2 pr_r}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKN" }{}}{\fldrslt {\cs37\ul\cf2 profit_report::profit}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIR" }{}}{\fldrslt {\cs37\ul\cf2 ptrpr_r}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKQ" }{}}{\fldrslt {\cs37\ul\cf2 profit_report::qty}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKS" }{}}{\fldrslt {\cs37\ul\cf2 profit_report::rate}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKU" }{}}{\fldrslt {\cs37\ul\cf2 profit_report::sDay}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKW" }{}}{\fldrslt {\cs37\ul\cf2 profit_report::sMonth}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKY" }{}}{\fldrslt {\cs37\ul\cf2 profit_report::sYear}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 t()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAALA" }{}}{\fldrslt {\cs37\ul\cf2 profit_report::unit}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHU" }{}}{\fldrslt {\cs37\ul\cf2 report_menu()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_abb6f01f09afaf49c585b2ee6bc970cdd_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_abb6f01f09afaf49c585b2ee6bc970cdd_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v pur_rpt\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:pur_rpt}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void pur_rpt ()}}
+\par
+{\bkmkstart AAAAAAAADL}
+{\bkmkend AAAAAAAADL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 exit()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 lbox()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJR" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::medi_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJT" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::medir_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIO" }{}}{\fldrslt {\cs37\ul\cf2 p_r}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIP" }{}}{\fldrslt {\cs37\ul\cf2 ptrp_r}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJU" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::qty}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJX" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::rate}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJZ" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::sDay}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKA" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::sMonth}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKC" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::supp_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKD" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::sYear}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 t()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKF" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::total}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHU" }{}}{\fldrslt {\cs37\ul\cf2 report_menu()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a67b812b7a08365e3b2d8516e9688a062_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a67b812b7a08365e3b2d8516e9688a062_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v pur_rpt_daily\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:pur_rpt_daily}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void pur_rpt_daily ()}}
+\par
+{\bkmkstart AAAAAAAADM}
+{\bkmkend AAAAAAAADM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 exit()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 lbox()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJR" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::medi_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJT" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::medir_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIO" }{}}{\fldrslt {\cs37\ul\cf2 p_r}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIP" }{}}{\fldrslt {\cs37\ul\cf2 ptrp_r}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJU" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::qty}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJX" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::rate}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJZ" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::sDay}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKA" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::sMonth}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKC" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::supp_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKD" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::sYear}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 t()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKF" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report::total}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHU" }{}}{\fldrslt {\cs37\ul\cf2 report_menu()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_acc903cc7748066f4e6c29961be6f060d_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_acc903cc7748066f4e6c29961be6f060d_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v remainderQty\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:remainderQty}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void remainderQty ()}}
+\par
+{\bkmkstart AAAAAAAAHL}
+{\bkmkend AAAAAAAAHL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJS" }{}}{\fldrslt {\cs37\ul\cf2 medical::medi_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIJ" }{}}{\fldrslt {\cs37\ul\cf2 ptr1}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJV" }{}}{\fldrslt {\cs37\ul\cf2 medical::quantity}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIF" }{}}{\fldrslt {\cs37\ul\cf2 temp}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_ab052b833376161ca1ab9f7653e8be73a_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_ab052b833376161ca1ab9f7653e8be73a_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v report\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:report}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void report ()}}
+\par
+{\bkmkstart AAAAAAAAHV}
+{\bkmkend AAAAAAAAHV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v report_menu\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:report_menu}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void report_menu ()}}
+\par
+{\bkmkstart AAAAAAAAHU}
+{\bkmkend AAAAAAAAHU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHD" }{}}{\fldrslt {\cs37\ul\cf2 main_box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHW" }{}}{\fldrslt {\cs37\ul\cf2 profit_rpt()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADL" }{}}{\fldrslt {\cs37\ul\cf2 pur_rpt()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADM" }{}}{\fldrslt {\cs37\ul\cf2 pur_rpt_daily()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADN" }{}}{\fldrslt {\cs37\ul\cf2 sale_rpt()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 sale_rpt_daily()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_ac34b034e6b88b567768b483d1014864d_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_ac34b034e6b88b567768b483d1014864d_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v sale_rpt\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:sale_rpt}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void sale_rpt ()}}
+\par
+{\bkmkstart AAAAAAAADN}
+{\bkmkend AAAAAAAADN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKI" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::cust_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 exit()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 lbox()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKJ" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::medi_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKL" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::medir_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIN" }{}}{\fldrslt {\cs37\ul\cf2 ptrs_r}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKP" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::qty}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKR" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::rate}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIM" }{}}{\fldrslt {\cs37\ul\cf2 s_r}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKT" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::sDay}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKV" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::sMonth}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKX" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::sYear}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::total}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHU" }{}}{\fldrslt {\cs37\ul\cf2 report_menu()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a3d414c641783f76d07d932c9a6c1e1e5_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a3d414c641783f76d07d932c9a6c1e1e5_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v sale_rpt_daily\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:sale_rpt_daily}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void sale_rpt_daily ()}}
+\par
+{\bkmkstart AAAAAAAADO}
+{\bkmkend AAAAAAAADO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKI" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::cust_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 exit()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 lbox()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKJ" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::medi_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKL" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::medir_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIN" }{}}{\fldrslt {\cs37\ul\cf2 ptrs_r}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKP" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::qty}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKR" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::rate}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIM" }{}}{\fldrslt {\cs37\ul\cf2 s_r}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKT" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::sDay}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKV" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::sMonth}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKX" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::sYear}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKZ" }{}}{\fldrslt {\cs37\ul\cf2 sales_report::total}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHU" }{}}{\fldrslt {\cs37\ul\cf2 report_menu()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a348367e6a182fa74256fa68fc0bd0759_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a348367e6a182fa74256fa68fc0bd0759_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v search\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:search}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void search ()}}
+\par
+{\bkmkstart AAAAAAAAHN}
+{\bkmkend AAAAAAAAHN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHZ" }{}}{\fldrslt {\cs37\ul\cf2 animation()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHD" }{}}{\fldrslt {\cs37\ul\cf2 main_box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHO" }{}}{\fldrslt {\cs37\ul\cf2 search_id()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHP" }{}}{\fldrslt {\cs37\ul\cf2 search_name()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHM" }{}}{\fldrslt {\cs37\ul\cf2 supplier()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHM" }{}}{\fldrslt {\cs37\ul\cf2 supplier()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_acfa13f24e1780367b83bd2531f17d850_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_acfa13f24e1780367b83bd2531f17d850_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v search_cid\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:search_cid}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void search_cid ()}}
+\par
+{\bkmkstart AAAAAAAAHS}
+{\bkmkend AAAAAAAAHS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJB" }{}}{\fldrslt {\cs37\ul\cf2 customer::city}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJC" }{}}{\fldrslt {\cs37\ul\cf2 customer::cust_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJD" }{}}{\fldrslt {\cs37\ul\cf2 customer::cust_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJE" }{}}{\fldrslt {\cs37\ul\cf2 customer::email}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJF" }{}}{\fldrslt {\cs37\ul\cf2 customer::mob_no}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIJ" }{}}{\fldrslt {\cs37\ul\cf2 ptr1}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAII" }{}}{\fldrslt {\cs37\ul\cf2 temp_c}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHR" }{}}{\fldrslt {\cs37\ul\cf2 cust_search()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a2c5e292079908d89dc77cae01b55415e_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a2c5e292079908d89dc77cae01b55415e_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v search_cname\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:search_cname}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void search_cname ()}}
+\par
+{\bkmkstart AAAAAAAAHT}
+{\bkmkend AAAAAAAAHT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJB" }{}}{\fldrslt {\cs37\ul\cf2 customer::city}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJC" }{}}{\fldrslt {\cs37\ul\cf2 customer::cust_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJD" }{}}{\fldrslt {\cs37\ul\cf2 customer::cust_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJE" }{}}{\fldrslt {\cs37\ul\cf2 customer::email}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJF" }{}}{\fldrslt {\cs37\ul\cf2 customer::mob_no}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIJ" }{}}{\fldrslt {\cs37\ul\cf2 ptr1}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAII" }{}}{\fldrslt {\cs37\ul\cf2 temp_c}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHR" }{}}{\fldrslt {\cs37\ul\cf2 cust_search()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_af70abcd650764333e5aad7038d1a0577_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_af70abcd650764333e5aad7038d1a0577_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v search_id\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:search_id}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void search_id ()}}
+\par
+{\bkmkstart AAAAAAAAHO}
+{\bkmkend AAAAAAAAHO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJG" }{}}{\fldrslt {\cs37\ul\cf2 supplier::city}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJH" }{}}{\fldrslt {\cs37\ul\cf2 supplier::email}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJI" }{}}{\fldrslt {\cs37\ul\cf2 supplier::mob_no}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJJ" }{}}{\fldrslt {\cs37\ul\cf2 supplier::supp_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJK" }{}}{\fldrslt {\cs37\ul\cf2 supplier::supp_name}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIH" }{}}{\fldrslt {\cs37\ul\cf2 temp1}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHN" }{}}{\fldrslt {\cs37\ul\cf2 search()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a852e86c180b2d2c06d691c9043664956_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a852e86c180b2d2c06d691c9043664956_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v search_name\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:search_name}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void search_name ()}}
+\par
+{\bkmkstart AAAAAAAAHP}
+{\bkmkend AAAAAAAAHP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJG" }{}}{\fldrslt {\cs37\ul\cf2 supplier::city}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJH" }{}}{\fldrslt {\cs37\ul\cf2 supplier::email}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJI" }{}}{\fldrslt {\cs37\ul\cf2 supplier::mob_no}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIJ" }{}}{\fldrslt {\cs37\ul\cf2 ptr1}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJJ" }{}}{\fldrslt {\cs37\ul\cf2 supplier::supp_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJK" }{}}{\fldrslt {\cs37\ul\cf2 supplier::supp_name}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIH" }{}}{\fldrslt {\cs37\ul\cf2 temp1}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHN" }{}}{\fldrslt {\cs37\ul\cf2 search()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a3cd4ad50ed0a463ca93d117a6ab7f10b_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a3cd4ad50ed0a463ca93d117a6ab7f10b_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v stock\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:stock}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void stock ()}}
+\par
+{\bkmkstart AAAAAAAADP}
+{\bkmkend AAAAAAAADP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHZ" }{}}{\fldrslt {\cs37\ul\cf2 animation()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 exit()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJO" }{}}{\fldrslt {\cs37\ul\cf2 medical::exp_date}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJP" }{}}{\fldrslt {\cs37\ul\cf2 medical::id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 lbox()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJS" }{}}{\fldrslt {\cs37\ul\cf2 medical::medi_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIJ" }{}}{\fldrslt {\cs37\ul\cf2 ptr1}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJV" }{}}{\fldrslt {\cs37\ul\cf2 medical::quantity}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKB" }{}}{\fldrslt {\cs37\ul\cf2 medical::supp_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIF" }{}}{\fldrslt {\cs37\ul\cf2 temp}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADT" }{}}{\fldrslt {\cs37\ul\cf2 update_stock()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHI" }{}}{\fldrslt {\cs37\ul\cf2 medicine()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_af482c6562bb2350ab4bc326319f4a765_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_af482c6562bb2350ab4bc326319f4a765_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v sup_update\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:sup_update}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void sup_update ()}}
+\par
+{\bkmkstart AAAAAAAADQ}
+{\bkmkend AAAAAAAADQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJG" }{}}{\fldrslt {\cs37\ul\cf2 supplier::city}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJH" }{}}{\fldrslt {\cs37\ul\cf2 supplier::email}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 exit()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 lbox()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJI" }{}}{\fldrslt {\cs37\ul\cf2 supplier::mob_no}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIJ" }{}}{\fldrslt {\cs37\ul\cf2 ptr1}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJJ" }{}}{\fldrslt {\cs37\ul\cf2 supplier::supp_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJK" }{}}{\fldrslt {\cs37\ul\cf2 supplier::supp_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIH" }{}}{\fldrslt {\cs37\ul\cf2 temp1}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIA" }{}}{\fldrslt {\cs37\ul\cf2 ventry()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHM" }{}}{\fldrslt {\cs37\ul\cf2 supplier()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a3ec5c75dfcb02492aed80f705deecb26_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a3ec5c75dfcb02492aed80f705deecb26_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v supp_entry\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:supp_entry}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void supp_entry ()}}
+\par
+{\bkmkstart AAAAAAAADR}
+{\bkmkend AAAAAAAADR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJG" }{}}{\fldrslt {\cs37\ul\cf2 supplier::city}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJH" }{}}{\fldrslt {\cs37\ul\cf2 supplier::email}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 exit()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHB" }{}}{\fldrslt {\cs37\ul\cf2 getsupp_id()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 lbox()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJI" }{}}{\fldrslt {\cs37\ul\cf2 supplier::mob_no}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJJ" }{}}{\fldrslt {\cs37\ul\cf2 supplier::supp_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJK" }{}}{\fldrslt {\cs37\ul\cf2 supplier::supp_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 t()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIH" }{}}{\fldrslt {\cs37\ul\cf2 temp1}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIA" }{}}{\fldrslt {\cs37\ul\cf2 ventry()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHM" }{}}{\fldrslt {\cs37\ul\cf2 supplier()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a431bc695506f0b701c7e418ff5fc53c8_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a431bc695506f0b701c7e418ff5fc53c8_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v supp_list\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:supp_list}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void supp_list ()}}
+\par
+{\bkmkstart AAAAAAAADS}
+{\bkmkend AAAAAAAADS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJG" }{}}{\fldrslt {\cs37\ul\cf2 supplier::city}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJH" }{}}{\fldrslt {\cs37\ul\cf2 supplier::email}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 exit()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 lbox()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJI" }{}}{\fldrslt {\cs37\ul\cf2 supplier::mob_no}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIJ" }{}}{\fldrslt {\cs37\ul\cf2 ptr1}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJJ" }{}}{\fldrslt {\cs37\ul\cf2 supplier::supp_id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJK" }{}}{\fldrslt {\cs37\ul\cf2 supplier::supp_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 t()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIH" }{}}{\fldrslt {\cs37\ul\cf2 temp1}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHM" }{}}{\fldrslt {\cs37\ul\cf2 supplier()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a5e99770f3e0688617aea5914534ded9c_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a5e99770f3e0688617aea5914534ded9c_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v supplier\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:supplier}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGT" }{}}{\fldrslt {\cs37\ul\cf2 supplier}}}
+ ()}}
+\par
+{\bkmkstart AAAAAAAAHM}
+{\bkmkend AAAAAAAAHM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHZ" }{}}{\fldrslt {\cs37\ul\cf2 animation()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHD" }{}}{\fldrslt {\cs37\ul\cf2 main_box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHN" }{}}{\fldrslt {\cs37\ul\cf2 search()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADQ" }{}}{\fldrslt {\cs37\ul\cf2 sup_update()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADR" }{}}{\fldrslt {\cs37\ul\cf2 supp_entry()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADS" }{}}{\fldrslt {\cs37\ul\cf2 supp_list()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHN" }{}}{\fldrslt {\cs37\ul\cf2 search()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_ab2ecd9a6ceaa8234631a9803607776cf_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_ab2ecd9a6ceaa8234631a9803607776cf_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v t\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:t}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int t (void )}}
+\par
+{\bkmkstart AAAAAAAAHY}
+{\bkmkend AAAAAAAAHY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 t()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 cust_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 main_menu()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHK" }{}}{\fldrslt {\cs37\ul\cf2 medi_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 medi_sale()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHW" }{}}{\fldrslt {\cs37\ul\cf2 profit_rpt()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADL" }{}}{\fldrslt {\cs37\ul\cf2 pur_rpt()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADM" }{}}{\fldrslt {\cs37\ul\cf2 pur_rpt_daily()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADR" }{}}{\fldrslt {\cs37\ul\cf2 supp_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADS" }{}}{\fldrslt {\cs37\ul\cf2 supp_list()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 t()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIA" }{}}{\fldrslt {\cs37\ul\cf2 ventry()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_ad2c584e6472d5514c2fa94aea1697bb7_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_ad2c584e6472d5514c2fa94aea1697bb7_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v update_stock\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:update_stock}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void update_stock ()}}
+\par
+{\bkmkstart AAAAAAAADT}
+{\bkmkend AAAAAAAADT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACE" }{}}{\fldrslt {\cs37\ul\cf2 a}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKH" }{}}{\fldrslt {\cs37\ul\cf2 medical::bye}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJN" }{}}{\fldrslt {\cs37\ul\cf2 medical::cost}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 exit()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJP" }{}}{\fldrslt {\cs37\ul\cf2 medical::id}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJS" }{}}{\fldrslt {\cs37\ul\cf2 medical::medi_name}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIG" }{}}{\fldrslt {\cs37\ul\cf2 ptr}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKO" }{}}{\fldrslt {\cs37\ul\cf2 medical::qty}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJV" }{}}{\fldrslt {\cs37\ul\cf2 medical::quantity}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJY" }{}}{\fldrslt {\cs37\ul\cf2 medical::sale}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIF" }{}}{\fldrslt {\cs37\ul\cf2 temp}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKE" }{}}{\fldrslt {\cs37\ul\cf2 medical::total}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKG" }{}}{\fldrslt {\cs37\ul\cf2 medical::unit}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 x}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 stock()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a63c41f7ad60f1ee019659bff9af05431_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a63c41f7ad60f1ee019659bff9af05431_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v ventry\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:ventry}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ventry (char  {\i t}[], int  {\i code})}}
+\par
+{\bkmkstart AAAAAAAAIA}
+{\bkmkend AAAAAAAAIA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 t()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 cust_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADJ" }{}}{\fldrslt {\cs37\ul\cf2 cust_update()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHK" }{}}{\fldrslt {\cs37\ul\cf2 medi_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 medi_sale()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADQ" }{}}{\fldrslt {\cs37\ul\cf2 sup_update()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADR" }{}}{\fldrslt {\cs37\ul\cf2 supp_entry()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_aec9f19843278454adbd9bc9dd50f8175_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_aec9f19843278454adbd9bc9dd50f8175_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v wbox\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:wbox}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbox ()}}
+\par
+{\bkmkstart AAAAAAAAHF}
+{\bkmkend AAAAAAAAHF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHC" }{}}{\fldrslt {\cs37\ul\cf2 welcome()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_afa9cfee312a432cac05d5539e02c528b_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_afa9cfee312a432cac05d5539e02c528b_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v welcome\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:welcome}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void welcome ()}}
+\par
+{\bkmkstart AAAAAAAAHC}
+{\bkmkend AAAAAAAAHC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 i}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHF" }{}}{\fldrslt {\cs37\ul\cf2 wbox()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d16/a00029_a236e454e493fc9b262f746305660a2eb_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variable Documentation\par
+\pard\plain 
+{\xe \v a\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:a}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char a[10]}}
+\par
+{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 d_quan()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 d_rate()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHK" }{}}{\fldrslt {\cs37\ul\cf2 medi_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 medi_sale()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADT" }{}}{\fldrslt {\cs37\ul\cf2 update_stock()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAO" }{}}{\fldrslt {\cs37\ul\cf2 window()}}}
+.}\par
+}
+{\xe \v bil\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:bil}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABQ" }{}}{\fldrslt {\cs37\ul\cf2 bill}}}
+ bil}}
+\par
+{\bkmkstart AAAAAAAAIK}
+{\bkmkend AAAAAAAAIK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHG" }{}}{\fldrslt {\cs37\ul\cf2 bill()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 medi_sale()}}}
+.}\par
+}
+{\xe \v coord\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:coord}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+COORD coord = \{ 0, 0 \}}}
+\par
+{\bkmkstart AAAAAAAAIE}
+{\bkmkend AAAAAAAAIE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+.}\par
+}
+{\xe \v i\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:i}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int i}}
+\par
+{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHZ" }{}}{\fldrslt {\cs37\ul\cf2 animation()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAS" }{}}{\fldrslt {\cs37\ul\cf2 bill()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHE" }{}}{\fldrslt {\cs37\ul\cf2 box1()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADI" }{}}{\fldrslt {\cs37\ul\cf2 cust_list()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADJ" }{}}{\fldrslt {\cs37\ul\cf2 cust_update()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABB" }{}}{\fldrslt {\cs37\ul\cf2 d_all()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 d_code()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 d_mainmenu()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 d_quan()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 d_rate()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAQ" }{}}{\fldrslt {\cs37\ul\cf2 d_search()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAL" }{}}{\fldrslt {\cs37\ul\cf2 dbill()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 dis_con()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAN" }{}}{\fldrslt {\cs37\ul\cf2 display()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIC" }{}}{\fldrslt {\cs37\ul\cf2 lbox()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAID" }{}}{\fldrslt {\cs37\ul\cf2 main()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHD" }{}}{\fldrslt {\cs37\ul\cf2 main_box()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 medi_sale()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADK" }{}}{\fldrslt {\cs37\ul\cf2 medi_search()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHS" }{}}{\fldrslt {\cs37\ul\cf2 search_cid()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHT" }{}}{\fldrslt {\cs37\ul\cf2 search_cname()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHO" }{}}{\fldrslt {\cs37\ul\cf2 search_id()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHP" }{}}{\fldrslt {\cs37\ul\cf2 search_name()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 stock()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADQ" }{}}{\fldrslt {\cs37\ul\cf2 sup_update()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADS" }{}}{\fldrslt {\cs37\ul\cf2 supp_list()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADT" }{}}{\fldrslt {\cs37\ul\cf2 update_stock()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIA" }{}}{\fldrslt {\cs37\ul\cf2 ventry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHF" }{}}{\fldrslt {\cs37\ul\cf2 wbox()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHC" }{}}{\fldrslt {\cs37\ul\cf2 welcome()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAO" }{}}{\fldrslt {\cs37\ul\cf2 window()}}}
+.}\par
+}
+{\xe \v p_r\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:p_r}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGW" }{}}{\fldrslt {\cs37\ul\cf2 purchase_report}}}
+ p_r}}
+\par
+{\bkmkstart AAAAAAAAIO}
+{\bkmkend AAAAAAAAIO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHK" }{}}{\fldrslt {\cs37\ul\cf2 medi_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADL" }{}}{\fldrslt {\cs37\ul\cf2 pur_rpt()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADM" }{}}{\fldrslt {\cs37\ul\cf2 pur_rpt_daily()}}}
+.}\par
+}
+{\xe \v pr_r\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:pr_r}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGX" }{}}{\fldrslt {\cs37\ul\cf2 profit_report}}}
+ pr_r}}
+\par
+{\bkmkstart AAAAAAAAIQ}
+{\bkmkend AAAAAAAAIQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 medi_sale()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHW" }{}}{\fldrslt {\cs37\ul\cf2 profit_rpt()}}}
+.}\par
+}
+{\xe \v ptr\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:ptr}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+FILE* ptr}}
+\par
+{\bkmkstart AAAAAAAAIG}
+{\bkmkend AAAAAAAAIG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHK" }{}}{\fldrslt {\cs37\ul\cf2 medi_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 medi_sale()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADT" }{}}{\fldrslt {\cs37\ul\cf2 update_stock()}}}
+.}\par
+}
+{\xe \v ptr1\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:ptr1}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+FILE* ptr1}}
+\par
+{\bkmkstart AAAAAAAAIJ}
+{\bkmkend AAAAAAAAIJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADI" }{}}{\fldrslt {\cs37\ul\cf2 cust_list()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADJ" }{}}{\fldrslt {\cs37\ul\cf2 cust_update()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 medi_sale()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADK" }{}}{\fldrslt {\cs37\ul\cf2 medi_search()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHL" }{}}{\fldrslt {\cs37\ul\cf2 remainderQty()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHS" }{}}{\fldrslt {\cs37\ul\cf2 search_cid()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHT" }{}}{\fldrslt {\cs37\ul\cf2 search_cname()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHP" }{}}{\fldrslt {\cs37\ul\cf2 search_name()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 stock()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADQ" }{}}{\fldrslt {\cs37\ul\cf2 sup_update()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADS" }{}}{\fldrslt {\cs37\ul\cf2 supp_list()}}}
+.}\par
+}
+{\xe \v ptrbill\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:ptrbill}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+FILE* ptrbill}}
+\par
+{\bkmkstart AAAAAAAAIL}
+{\bkmkend AAAAAAAAIL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHG" }{}}{\fldrslt {\cs37\ul\cf2 bill()}}}
+.}\par
+}
+{\xe \v ptrp_r\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:ptrp_r}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+FILE* ptrp_r}}
+\par
+{\bkmkstart AAAAAAAAIP}
+{\bkmkend AAAAAAAAIP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHK" }{}}{\fldrslt {\cs37\ul\cf2 medi_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADL" }{}}{\fldrslt {\cs37\ul\cf2 pur_rpt()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADM" }{}}{\fldrslt {\cs37\ul\cf2 pur_rpt_daily()}}}
+.}\par
+}
+{\xe \v ptrpr_r\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:ptrpr_r}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+FILE* ptrpr_r}}
+\par
+{\bkmkstart AAAAAAAAIR}
+{\bkmkend AAAAAAAAIR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 medi_sale()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHW" }{}}{\fldrslt {\cs37\ul\cf2 profit_rpt()}}}
+.}\par
+}
+{\xe \v ptrs_r\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:ptrs_r}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+FILE* ptrs_r}}
+\par
+{\bkmkstart AAAAAAAAIN}
+{\bkmkend AAAAAAAAIN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 medi_sale()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADN" }{}}{\fldrslt {\cs37\ul\cf2 sale_rpt()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 sale_rpt_daily()}}}
+.}\par
+}
+{\xe \v s_r\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:s_r}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGV" }{}}{\fldrslt {\cs37\ul\cf2 sales_report}}}
+ s_r}}
+\par
+{\bkmkstart AAAAAAAAIM}
+{\bkmkend AAAAAAAAIM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 medi_sale()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADN" }{}}{\fldrslt {\cs37\ul\cf2 sale_rpt()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 sale_rpt_daily()}}}
+.}\par
+}
+{\xe \v temp\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:temp}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGS" }{}}{\fldrslt {\cs37\ul\cf2 medical}}}
+ temp}}
+\par
+{\bkmkstart AAAAAAAAIF}
+{\bkmkend AAAAAAAAIF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHK" }{}}{\fldrslt {\cs37\ul\cf2 medi_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 medi_sale()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADK" }{}}{\fldrslt {\cs37\ul\cf2 medi_search()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHL" }{}}{\fldrslt {\cs37\ul\cf2 remainderQty()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 stock()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADT" }{}}{\fldrslt {\cs37\ul\cf2 update_stock()}}}
+.}\par
+}
+{\xe \v temp1\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:temp1}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGT" }{}}{\fldrslt {\cs37\ul\cf2 supplier}}}
+ temp1}}
+\par
+{\bkmkstart AAAAAAAAIH}
+{\bkmkend AAAAAAAAIH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHB" }{}}{\fldrslt {\cs37\ul\cf2 getsupp_id()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHO" }{}}{\fldrslt {\cs37\ul\cf2 search_id()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHP" }{}}{\fldrslt {\cs37\ul\cf2 search_name()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADQ" }{}}{\fldrslt {\cs37\ul\cf2 sup_update()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADR" }{}}{\fldrslt {\cs37\ul\cf2 supp_entry()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADS" }{}}{\fldrslt {\cs37\ul\cf2 supp_list()}}}
+.}\par
+}
+{\xe \v temp_c\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:temp_c}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGU" }{}}{\fldrslt {\cs37\ul\cf2 customer}}}
+ temp_c}}
+\par
+{\bkmkstart AAAAAAAAII}
+{\bkmkend AAAAAAAAII}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 cust_entry()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADI" }{}}{\fldrslt {\cs37\ul\cf2 cust_list()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADJ" }{}}{\fldrslt {\cs37\ul\cf2 cust_update()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHA" }{}}{\fldrslt {\cs37\ul\cf2 getcust_id()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 medi_sale()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHS" }{}}{\fldrslt {\cs37\ul\cf2 search_cid()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHT" }{}}{\fldrslt {\cs37\ul\cf2 search_cname()}}}
+.}\par
+}
+{\xe \v x\:MedicalStoreManagement.c}
+{\xe \v MedicalStoreManagement.c\:x}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGS" }{}}{\fldrslt {\cs37\ul\cf2 medical}}}
+ x[20]}}
+\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAU" }{}}{\fldrslt {\cs37\ul\cf2 add()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAS" }{}}{\fldrslt {\cs37\ul\cf2 bill()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABD" }{}}{\fldrslt {\cs37\ul\cf2 check()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 d_code()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 del()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 edit()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 gotoxy()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 medi_sale()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADT" }{}}{\fldrslt {\cs37\ul\cf2 update_stock()}}}
+.}\par
+}
+}

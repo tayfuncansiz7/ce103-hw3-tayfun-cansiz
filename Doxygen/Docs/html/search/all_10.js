@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['s_5fr_0',['s_r',['../d5/d16/a00029.html#a75c9d0c153b32f99ea7261a829c5437a',1,'MedicalStoreManagement.c']]],
+  ['sale_1',['sale',['../d5/db6/a00042.html#a166606eadad0fce42f795dc65f2d56cf',1,'medical']]],
+  ['sale_5frpt_2',['sale_rpt',['../d5/d16/a00029.html#a3d414c641783f76d07d932c9a6c1e1e5',1,'MedicalStoreManagement.c']]],
+  ['sale_5frpt_5fdaily_3',['sale_rpt_daily',['../d5/d16/a00029.html#a348367e6a182fa74256fa68fc0bd0759',1,'MedicalStoreManagement.c']]],
+  ['sales_5freport_4',['sales_report',['../d7/df7/a00058.html',1,'']]],
+  ['sday_5',['sDay',['../d7/df7/a00058.html#a4d8fd0fcb9df74e64060d98d42fdafba',1,'sales_report::sDay()'],['../df/d03/a00062.html#a3ba9d7db2b52a80e1567ff67369581b2',1,'purchase_report::sDay()'],['../d9/db3/a00066.html#a096773df7ae584df350d0cf5f4d10b7d',1,'profit_report::sDay()']]],
+  ['search_6',['search',['../d5/d16/a00029.html#acfa13f24e1780367b83bd2531f17d850',1,'MedicalStoreManagement.c']]],
+  ['search1_7',['search1',['../da/d24/a00068.html#a197552387d677d21b083c61f8743e0fc',1,'message.h']]],
+  ['search2_8',['search2',['../da/d24/a00068.html#a5faa26844d89dd3d38848235c64e5f64',1,'message.h']]],
+  ['search_5fcid_9',['search_cid',['../d5/d16/a00029.html#a2c5e292079908d89dc77cae01b55415e',1,'MedicalStoreManagement.c']]],
+  ['search_5fcname_10',['search_cname',['../d5/d16/a00029.html#af70abcd650764333e5aad7038d1a0577',1,'MedicalStoreManagement.c']]],
+  ['search_5fid_11',['search_id',['../d5/d16/a00029.html#a852e86c180b2d2c06d691c9043664956',1,'MedicalStoreManagement.c']]],
+  ['search_5fmenu_12',['search_menu',['../da/d24/a00068.html#a874057bf30a50a4da9af54f073aca0d6',1,'message.h']]],
+  ['search_5fname_13',['search_name',['../d5/d16/a00029.html#a3cd4ad50ed0a463ca93d117a6ab7f10b',1,'MedicalStoreManagement.c']]],
+  ['settranslatelang_14',['setTranslateLang',['../db/db6/a00074.html#af406e98bb980ef06830d84221e422e8c',1,'setTranslateLang(char *str, bool save):&#160;translate.c'],['../da/dec/a00080.html#af406e98bb980ef06830d84221e422e8c',1,'setTranslateLang(char *str, bool save):&#160;translate.c'],['../d1/d09/a00077.html#af406e98bb980ef06830d84221e422e8c',1,'setTranslateLang(char *str, bool save):&#160;translate.c'],['../d2/d1f/a00083.html#af406e98bb980ef06830d84221e422e8c',1,'setTranslateLang(char *str, bool save):&#160;translate.c']]],
+  ['smonth_15',['sMonth',['../d7/df7/a00058.html#a61d784ced3b0923ded87e5bcd6979bcf',1,'sales_report::sMonth()'],['../df/d03/a00062.html#ae1e82c70e15fff027bb252ac32e2cc37',1,'purchase_report::sMonth()'],['../d9/db3/a00066.html#aab64681189d7cf93f408c3f31d40f775',1,'profit_report::sMonth()']]],
+  ['sn_5f_16',['sn_',['../da/d24/a00068.html#a1d9c265a00867733743d99318414ecd1',1,'message.h']]],
+  ['stock_17',['stock',['../d5/d16/a00029.html#af482c6562bb2350ab4bc326319f4a765',1,'MedicalStoreManagement.c']]],
+  ['sup_5fupdate_18',['sup_update',['../d5/d16/a00029.html#a3ec5c75dfcb02492aed80f705deecb26',1,'MedicalStoreManagement.c']]],
+  ['supp_5fentry_19',['supp_entry',['../d5/d16/a00029.html#a431bc695506f0b701c7e418ff5fc53c8',1,'MedicalStoreManagement.c']]],
+  ['supp_5fid_20',['supp_id',['../d3/dea/a00046.html#aa37fbc652cca886004dc37d5c011b099',1,'supplier']]],
+  ['supp_5flist_21',['supp_list',['../d5/d16/a00029.html#a5e99770f3e0688617aea5914534ded9c',1,'MedicalStoreManagement.c']]],
+  ['supp_5fname_22',['supp_name',['../d5/db6/a00042.html#a2c9c50214398958041a058bc82386259',1,'medical::supp_name()'],['../d3/dea/a00046.html#a36c59f88454cb6eabd33b16bafefb73d',1,'supplier::supp_name()'],['../df/d03/a00062.html#ab54489850bcebd1ce34d746583a8861d',1,'purchase_report::supp_name()']]],
+  ['supplier_23',['supplier',['../d3/dea/a00046.html',1,'supplier'],['../d5/d16/a00029.html#ab2ecd9a6ceaa8234631a9803607776cf',1,'supplier():&#160;MedicalStoreManagement.c']]],
+  ['syear_24',['sYear',['../d7/df7/a00058.html#ab393fd060df0ffd0066a3b5837588a5f',1,'sales_report::sYear()'],['../df/d03/a00062.html#ae3bf535f684e1d0349c62f59d7ba68f1',1,'purchase_report::sYear()'],['../d9/db3/a00066.html#a1588b84fb5adf17349d40cfb7b1c8b52',1,'profit_report::sYear()']]]
+];

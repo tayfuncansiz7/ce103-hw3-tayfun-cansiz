@@ -1,0 +1,1625 @@
+\hypertarget{a00029}{}\doxysection{C\+:/hw3/\+Medical\+Store\+Management/\+Medical\+Store\+Management/\+Medical\+Store\+Management.c File Reference}
+\label{a00029}\index{C:/hw3/MedicalStoreManagement/MedicalStoreManagement/MedicalStoreManagement.c@{C:/hw3/MedicalStoreManagement/MedicalStoreManagement/MedicalStoreManagement.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$conio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$dos.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+Include dependency graph for Medical\+Store\+Management.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d79/a00030}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{a00042}{medical}}
+\item 
+struct \mbox{\hyperlink{a00046}{supplier}}
+\item 
+struct \mbox{\hyperlink{a00050}{customer}}
+\item 
+struct \mbox{\hyperlink{a00054}{bill}}
+\item 
+struct \mbox{\hyperlink{a00058}{sales\+\_\+report}}
+\item 
+struct \mbox{\hyperlink{a00062}{purchase\+\_\+report}}
+\item 
+struct \mbox{\hyperlink{a00066}{profit\+\_\+report}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{a00029_af08ec37a8c99d747fb60fa15bc28678b}{\+\_\+\+CRT\+\_\+\+SECURE\+\_\+\+NO\+\_\+\+WARNINGS}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}} (int \mbox{\hyperlink{a00029_adfce14539463c64e68cd82af8d8e8fad}{x}}, int y)
+\item 
+int \mbox{\hyperlink{a00029_a3a59181ef40c199703c86a98b9e84be6}{getcust\+\_\+id}} ()
+\item 
+int \mbox{\hyperlink{a00029_af785d65f8356a9b833b483d5e24b78cb}{getsupp\+\_\+id}} ()
+\item 
+void \mbox{\hyperlink{a00029_a236e454e493fc9b262f746305660a2eb}{welcome}} ()
+\item 
+void \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu}} ()
+\item 
+void \mbox{\hyperlink{a00029_a48faeaeb1d8f8ed5927570474d6fe569}{main\+\_\+box}} ()
+\item 
+void \mbox{\hyperlink{a00029_a9e518ba024db6fc9ff8d69bdc4d75f79}{box1}} ()
+\item 
+void \mbox{\hyperlink{a00029_afa9cfee312a432cac05d5539e02c528b}{wbox}} ()
+\item 
+void \mbox{\hyperlink{a00029_adf0f03a768c327f84e6c1749ea46d448}{bill}} ()
+\item 
+void \mbox{\hyperlink{a00029_a789158f29284880f41199bede88272e3}{about}} ()
+\item 
+void \mbox{\hyperlink{a00029_a847ba849cf6bb3d5e048ad1f0daa35db}{medicine}} ()
+\item 
+void \mbox{\hyperlink{a00029_aa777bd026911bc07fa05f8a534573291}{medi\+\_\+sale}} ()
+\item 
+void \mbox{\hyperlink{a00029_af482c6562bb2350ab4bc326319f4a765}{stock}} ()
+\item 
+void \mbox{\hyperlink{a00029_a63c41f7ad60f1ee019659bff9af05431}{update\+\_\+stock}} ()
+\item 
+void \mbox{\hyperlink{a00029_a2904e53727e9438de807065db95db971}{medi\+\_\+entry}} ()
+\item 
+void \mbox{\hyperlink{a00029_a834e67bf52e80b33d850e2ebc7533fb4}{medi\+\_\+search}} ()
+\item 
+void \mbox{\hyperlink{a00029_ab052b833376161ca1ab9f7653e8be73a}{remainder\+Qty}} ()
+\item 
+void \mbox{\hyperlink{a00029_ab2ecd9a6ceaa8234631a9803607776cf}{supplier}} ()
+\item 
+void \mbox{\hyperlink{a00029_a431bc695506f0b701c7e418ff5fc53c8}{supp\+\_\+entry}} ()
+\item 
+void \mbox{\hyperlink{a00029_a5e99770f3e0688617aea5914534ded9c}{supp\+\_\+list}} ()
+\item 
+void \mbox{\hyperlink{a00029_a3ec5c75dfcb02492aed80f705deecb26}{sup\+\_\+update}} ()
+\item 
+void \mbox{\hyperlink{a00029_acfa13f24e1780367b83bd2531f17d850}{search}} ()
+\item 
+void \mbox{\hyperlink{a00029_a852e86c180b2d2c06d691c9043664956}{search\+\_\+id}} ()
+\item 
+void \mbox{\hyperlink{a00029_a3cd4ad50ed0a463ca93d117a6ab7f10b}{search\+\_\+name}} ()
+\item 
+void \mbox{\hyperlink{a00029_af71a1ee5c7b8b225825e744376c3dc2a}{customer}} ()
+\item 
+void \mbox{\hyperlink{a00029_ae10f58ce141ddadfb762cff282943a88}{cust\+\_\+search}} ()
+\item 
+void \mbox{\hyperlink{a00029_a2c5e292079908d89dc77cae01b55415e}{search\+\_\+cid}} ()
+\item 
+void \mbox{\hyperlink{a00029_af70abcd650764333e5aad7038d1a0577}{search\+\_\+cname}} ()
+\item 
+void \mbox{\hyperlink{a00029_a1ed6b5480572a72f1d9714aea6539108}{cust\+\_\+entry}} ()
+\item 
+void \mbox{\hyperlink{a00029_ae5545c8c6e7283029407cd2d721f39f6}{cust\+\_\+list}} ()
+\item 
+void \mbox{\hyperlink{a00029_a20aeb1971c3cc4b65916cf9bae9ba161}{cust\+\_\+update}} ()
+\item 
+void \mbox{\hyperlink{a00029_ac34b034e6b88b567768b483d1014864d}{report\+\_\+menu}} ()
+\item 
+void \mbox{\hyperlink{a00029_ae4499ee0125936e10dde278b4a18c289}{report}} ()
+\item 
+void \mbox{\hyperlink{a00029_a3d414c641783f76d07d932c9a6c1e1e5}{sale\+\_\+rpt}} ()
+\item 
+void \mbox{\hyperlink{a00029_a348367e6a182fa74256fa68fc0bd0759}{sale\+\_\+rpt\+\_\+daily}} ()
+\item 
+void \mbox{\hyperlink{a00029_abb6f01f09afaf49c585b2ee6bc970cdd}{profit\+\_\+rpt}} ()
+\item 
+void \mbox{\hyperlink{a00029_a67b812b7a08365e3b2d8516e9688a062}{pur\+\_\+rpt}} ()
+\item 
+void \mbox{\hyperlink{a00029_acc903cc7748066f4e6c29961be6f060d}{pur\+\_\+rpt\+\_\+daily}} ()
+\item 
+void \mbox{\hyperlink{a00029_ac5d60da3db82e6a830259b6e897a05d7}{linkfloat}} ()
+\item 
+int \mbox{\hyperlink{a00029_ad2c584e6472d5514c2fa94aea1697bb7}{t}} (void)
+\item 
+void \mbox{\hyperlink{a00029_a039d55c986652a41321402fe8e41baa5}{animation}} ()
+\item 
+void \mbox{\hyperlink{a00029_aec9f19843278454adbd9bc9dd50f8175}{ventry}} (char \mbox{\hyperlink{a00029_ad2c584e6472d5514c2fa94aea1697bb7}{t}}\mbox{[}$\,$\mbox{]}, int code)
+\item 
+void \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box}} ()
+\item 
+void \mbox{\hyperlink{a00029_a9c5bfef579a494196b6100ab478c6681}{lbox}} ()
+\item 
+int \mbox{\hyperlink{a00029_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+COORD \mbox{\hyperlink{a00029_afd9018d32867a27a7ce20ae665e80462}{coord}} = \{ 0, 0 \}
+\item 
+int \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}
+\item 
+struct \mbox{\hyperlink{a00042}{medical}} \mbox{\hyperlink{a00029_a2e80494afb367a3d3b88bf6a6caf4422}{temp}}
+\item 
+struct \mbox{\hyperlink{a00042}{medical}} \mbox{\hyperlink{a00029_adfce14539463c64e68cd82af8d8e8fad}{x}} \mbox{[}20\mbox{]}
+\item 
+FILE $\ast$ \mbox{\hyperlink{a00029_aa79194a5486deb48ea2806f4043033a7}{ptr}}
+\item 
+char \mbox{\hyperlink{a00029_a8e4f1f910ada5c00a94ac0745a5e1e23}{a}} \mbox{[}10\mbox{]}
+\item 
+struct \mbox{\hyperlink{a00046}{supplier}} \mbox{\hyperlink{a00029_a5c99dd2f37e157da891009961ee11c71}{temp1}}
+\item 
+struct \mbox{\hyperlink{a00050}{customer}} \mbox{\hyperlink{a00029_a2c3372ad6b469d96fbdc9786e01d76c4}{temp\+\_\+c}}
+\item 
+FILE $\ast$ \mbox{\hyperlink{a00029_aa31860e65a1b30e70af09ecef7b86122}{ptr1}}
+\item 
+struct \mbox{\hyperlink{a00054}{bill}} \mbox{\hyperlink{a00029_ae458264d7b7cdd3439fd12c93be3df2f}{bil}}
+\item 
+FILE $\ast$ \mbox{\hyperlink{a00029_aaffeb0840defdc8b6334d3f897216be2}{ptrbill}}
+\item 
+struct \mbox{\hyperlink{a00058}{sales\+\_\+report}} \mbox{\hyperlink{a00029_a75c9d0c153b32f99ea7261a829c5437a}{s\+\_\+r}}
+\item 
+FILE $\ast$ \mbox{\hyperlink{a00029_aceb678408b5a75a63b9fbe52f3faae17}{ptrs\+\_\+r}}
+\item 
+struct \mbox{\hyperlink{a00062}{purchase\+\_\+report}} \mbox{\hyperlink{a00029_aef00891a7389583b8ecc010fe8717166}{p\+\_\+r}}
+\item 
+FILE $\ast$ \mbox{\hyperlink{a00029_ad442d3499cf22a71e4dceca3e740846f}{ptrp\+\_\+r}}
+\item 
+struct \mbox{\hyperlink{a00066}{profit\+\_\+report}} \mbox{\hyperlink{a00029_af1c22d3cf78bc4d36a93769ee70a9c90}{pr\+\_\+r}}
+\item 
+FILE $\ast$ \mbox{\hyperlink{a00029_a071b52393e756c6ab5c380feac24160c}{ptrpr\+\_\+r}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{a00029_af08ec37a8c99d747fb60fa15bc28678b}\label{a00029_af08ec37a8c99d747fb60fa15bc28678b}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!\_CRT\_SECURE\_NO\_WARNINGS@{\_CRT\_SECURE\_NO\_WARNINGS}}
+\index{\_CRT\_SECURE\_NO\_WARNINGS@{\_CRT\_SECURE\_NO\_WARNINGS}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{\_CRT\_SECURE\_NO\_WARNINGS}{\_CRT\_SECURE\_NO\_WARNINGS}}
+{\footnotesize\ttfamily \#define \+\_\+\+CRT\+\_\+\+SECURE\+\_\+\+NO\+\_\+\+WARNINGS}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{a00029_a789158f29284880f41199bede88272e3}\label{a00029_a789158f29284880f41199bede88272e3}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!about@{about}}
+\index{about@{about}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{about()}{about()}}
+{\footnotesize\ttfamily void about (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a039d55c986652a41321402fe8e41baa5}{animation()}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, and \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/d16/a00029_a789158f29284880f41199bede88272e3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a789158f29284880f41199bede88272e3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a039d55c986652a41321402fe8e41baa5}\label{a00029_a039d55c986652a41321402fe8e41baa5}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!animation@{animation}}
+\index{animation@{animation}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{animation()}{animation()}}
+{\footnotesize\ttfamily void animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, and \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a789158f29284880f41199bede88272e3}{about()}}, \mbox{\hyperlink{a00029_ae10f58ce141ddadfb762cff282943a88}{cust\+\_\+search()}}, \mbox{\hyperlink{a00029_af71a1ee5c7b8b225825e744376c3dc2a}{customer()}}, \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}, \mbox{\hyperlink{a00029_acfa13f24e1780367b83bd2531f17d850}{search()}}, \mbox{\hyperlink{a00029_af482c6562bb2350ab4bc326319f4a765}{stock()}}, and \mbox{\hyperlink{a00029_ab2ecd9a6ceaa8234631a9803607776cf}{supplier()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{d5/d16/a00029_a039d55c986652a41321402fe8e41baa5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a039d55c986652a41321402fe8e41baa5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_adf0f03a768c327f84e6c1749ea46d448}\label{a00029_adf0f03a768c327f84e6c1749ea46d448}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!bill@{bill}}
+\index{bill@{bill}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{bill()}{bill()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{a00054}{bill}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_ae458264d7b7cdd3439fd12c93be3df2f}{bil}}, \mbox{\hyperlink{a00054_a0ab4a88322cce0d952c3d8281785b721}{bill\+::billno}}, \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00054_a4019348da82cb027d811b051cc82cc47}{bill\+::cname}}, \mbox{\hyperlink{a00054_a3412c377d0dbb421c731e9fdd9a9c48e}{bill\+::day}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}, \mbox{\hyperlink{a00054_a72e6ab206fa36c8ddf50c2294f27e234}{bill\+::medi\+\_\+qty}}, \mbox{\hyperlink{a00054_a9eef747bbb31aeef2adbfacada53bcb5}{bill\+::medi\+\_\+rate}}, \mbox{\hyperlink{a00054_a3c75226cfb4f20604d50829bd5928ace}{bill\+::mediname}}, \mbox{\hyperlink{a00054_a835bb2d96e731929f9c6d874091d6a4c}{bill\+::month}}, \mbox{\hyperlink{a00029_aaffeb0840defdc8b6334d3f897216be2}{ptrbill}}, \mbox{\hyperlink{a00054_ada1ea5b9c7b34b39e8d58c7d6261c42b}{bill\+::total}}, and \mbox{\hyperlink{a00054_acb8538423cf914420c42bc7eb8cbad09}{bill\+::year}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{d5/d16/a00029_adf0f03a768c327f84e6c1749ea46d448_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_adf0f03a768c327f84e6c1749ea46d448_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a74086c19c4e1eba47228ef1e62227e50}\label{a00029_a74086c19c4e1eba47228ef1e62227e50}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!box@{box}}
+\index{box@{box}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{box()}{box()}}
+{\footnotesize\ttfamily void box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, and \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_adf0f03a768c327f84e6c1749ea46d448}{bill()}}, \mbox{\hyperlink{a00029_a1ed6b5480572a72f1d9714aea6539108}{cust\+\_\+entry()}}, \mbox{\hyperlink{a00029_ae5545c8c6e7283029407cd2d721f39f6}{cust\+\_\+list()}}, \mbox{\hyperlink{a00029_a20aeb1971c3cc4b65916cf9bae9ba161}{cust\+\_\+update()}}, \mbox{\hyperlink{a00029_a2904e53727e9438de807065db95db971}{medi\+\_\+entry()}}, \mbox{\hyperlink{a00029_aa777bd026911bc07fa05f8a534573291}{medi\+\_\+sale()}}, \mbox{\hyperlink{a00029_a834e67bf52e80b33d850e2ebc7533fb4}{medi\+\_\+search()}}, \mbox{\hyperlink{a00029_abb6f01f09afaf49c585b2ee6bc970cdd}{profit\+\_\+rpt()}}, \mbox{\hyperlink{a00029_a67b812b7a08365e3b2d8516e9688a062}{pur\+\_\+rpt()}}, \mbox{\hyperlink{a00029_acc903cc7748066f4e6c29961be6f060d}{pur\+\_\+rpt\+\_\+daily()}}, \mbox{\hyperlink{a00029_a3d414c641783f76d07d932c9a6c1e1e5}{sale\+\_\+rpt()}}, \mbox{\hyperlink{a00029_a348367e6a182fa74256fa68fc0bd0759}{sale\+\_\+rpt\+\_\+daily()}}, \mbox{\hyperlink{a00029_a2c5e292079908d89dc77cae01b55415e}{search\+\_\+cid()}}, \mbox{\hyperlink{a00029_af70abcd650764333e5aad7038d1a0577}{search\+\_\+cname()}}, \mbox{\hyperlink{a00029_a852e86c180b2d2c06d691c9043664956}{search\+\_\+id()}}, \mbox{\hyperlink{a00029_a3cd4ad50ed0a463ca93d117a6ab7f10b}{search\+\_\+name()}}, \mbox{\hyperlink{a00029_af482c6562bb2350ab4bc326319f4a765}{stock()}}, \mbox{\hyperlink{a00029_a3ec5c75dfcb02492aed80f705deecb26}{sup\+\_\+update()}}, \mbox{\hyperlink{a00029_a431bc695506f0b701c7e418ff5fc53c8}{supp\+\_\+entry()}}, \mbox{\hyperlink{a00029_a5e99770f3e0688617aea5914534ded9c}{supp\+\_\+list()}}, and \mbox{\hyperlink{a00029_a63c41f7ad60f1ee019659bff9af05431}{update\+\_\+stock()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{d5/d16/a00029_a74086c19c4e1eba47228ef1e62227e50_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a74086c19c4e1eba47228ef1e62227e50_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a9e518ba024db6fc9ff8d69bdc4d75f79}\label{a00029_a9e518ba024db6fc9ff8d69bdc4d75f79}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!box1@{box1}}
+\index{box1@{box1}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{box1()}{box1()}}
+{\footnotesize\ttfamily void box1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, and \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{d5/d16/a00029_a9e518ba024db6fc9ff8d69bdc4d75f79_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a9e518ba024db6fc9ff8d69bdc4d75f79_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a1ed6b5480572a72f1d9714aea6539108}\label{a00029_a1ed6b5480572a72f1d9714aea6539108}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!cust\_entry@{cust\_entry}}
+\index{cust\_entry@{cust\_entry}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{cust\_entry()}{cust\_entry()}}
+{\footnotesize\ttfamily void cust\+\_\+entry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00050_af4b7144029ac656b7ae5588a2953133a}{customer\+::city}}, \mbox{\hyperlink{a00050_ab32b145de10d7776d4dcedbf91056301}{customer\+::cust\+\_\+id}}, \mbox{\hyperlink{a00050_aa8d76c88c4663df20ec5cfdf03424d6c}{customer\+::cust\+\_\+name}}, \mbox{\hyperlink{a00050_a3d6349526ad5488177e6366bb9626bc6}{customer\+::email}}, \mbox{\hyperlink{a00014_a358d2e2397ca11ccd17553e3c40e7901}{exit()}}, \mbox{\hyperlink{a00029_a3a59181ef40c199703c86a98b9e84be6}{getcust\+\_\+id()}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_a9c5bfef579a494196b6100ab478c6681}{lbox()}}, \mbox{\hyperlink{a00050_a4f97f5e78b107298dd27adf8db3788b4}{customer\+::mob\+\_\+no}}, \mbox{\hyperlink{a00029_ad2c584e6472d5514c2fa94aea1697bb7}{t()}}, \mbox{\hyperlink{a00029_a2c3372ad6b469d96fbdc9786e01d76c4}{temp\+\_\+c}}, and \mbox{\hyperlink{a00029_aec9f19843278454adbd9bc9dd50f8175}{ventry()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_af71a1ee5c7b8b225825e744376c3dc2a}{customer()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a1ed6b5480572a72f1d9714aea6539108_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a1ed6b5480572a72f1d9714aea6539108_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_ae5545c8c6e7283029407cd2d721f39f6}\label{a00029_ae5545c8c6e7283029407cd2d721f39f6}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!cust\_list@{cust\_list}}
+\index{cust\_list@{cust\_list}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{cust\_list()}{cust\_list()}}
+{\footnotesize\ttfamily void cust\+\_\+list (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00050_af4b7144029ac656b7ae5588a2953133a}{customer\+::city}}, \mbox{\hyperlink{a00050_ab32b145de10d7776d4dcedbf91056301}{customer\+::cust\+\_\+id}}, \mbox{\hyperlink{a00050_aa8d76c88c4663df20ec5cfdf03424d6c}{customer\+::cust\+\_\+name}}, \mbox{\hyperlink{a00050_a3d6349526ad5488177e6366bb9626bc6}{customer\+::email}}, \mbox{\hyperlink{a00014_a358d2e2397ca11ccd17553e3c40e7901}{exit()}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}, \mbox{\hyperlink{a00029_a9c5bfef579a494196b6100ab478c6681}{lbox()}}, \mbox{\hyperlink{a00050_a4f97f5e78b107298dd27adf8db3788b4}{customer\+::mob\+\_\+no}}, \mbox{\hyperlink{a00029_aa31860e65a1b30e70af09ecef7b86122}{ptr1}}, and \mbox{\hyperlink{a00029_a2c3372ad6b469d96fbdc9786e01d76c4}{temp\+\_\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_af71a1ee5c7b8b225825e744376c3dc2a}{customer()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{d5/d16/a00029_ae5545c8c6e7283029407cd2d721f39f6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_ae5545c8c6e7283029407cd2d721f39f6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_ae10f58ce141ddadfb762cff282943a88}\label{a00029_ae10f58ce141ddadfb762cff282943a88}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!cust\_search@{cust\_search}}
+\index{cust\_search@{cust\_search}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{cust\_search()}{cust\_search()}}
+{\footnotesize\ttfamily void cust\+\_\+search (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a039d55c986652a41321402fe8e41baa5}{animation()}}, \mbox{\hyperlink{a00029_af71a1ee5c7b8b225825e744376c3dc2a}{customer()}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_a48faeaeb1d8f8ed5927570474d6fe569}{main\+\_\+box()}}, \mbox{\hyperlink{a00029_a2c5e292079908d89dc77cae01b55415e}{search\+\_\+cid()}}, and \mbox{\hyperlink{a00029_af70abcd650764333e5aad7038d1a0577}{search\+\_\+cname()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_af71a1ee5c7b8b225825e744376c3dc2a}{customer()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/d16/a00029_ae10f58ce141ddadfb762cff282943a88_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_ae10f58ce141ddadfb762cff282943a88_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a20aeb1971c3cc4b65916cf9bae9ba161}\label{a00029_a20aeb1971c3cc4b65916cf9bae9ba161}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!cust\_update@{cust\_update}}
+\index{cust\_update@{cust\_update}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{cust\_update()}{cust\_update()}}
+{\footnotesize\ttfamily void cust\+\_\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00050_af4b7144029ac656b7ae5588a2953133a}{customer\+::city}}, \mbox{\hyperlink{a00050_ab32b145de10d7776d4dcedbf91056301}{customer\+::cust\+\_\+id}}, \mbox{\hyperlink{a00050_aa8d76c88c4663df20ec5cfdf03424d6c}{customer\+::cust\+\_\+name}}, \mbox{\hyperlink{a00050_a3d6349526ad5488177e6366bb9626bc6}{customer\+::email}}, \mbox{\hyperlink{a00014_a358d2e2397ca11ccd17553e3c40e7901}{exit()}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}, \mbox{\hyperlink{a00029_a9c5bfef579a494196b6100ab478c6681}{lbox()}}, \mbox{\hyperlink{a00050_a4f97f5e78b107298dd27adf8db3788b4}{customer\+::mob\+\_\+no}}, \mbox{\hyperlink{a00029_aa31860e65a1b30e70af09ecef7b86122}{ptr1}}, \mbox{\hyperlink{a00029_a2c3372ad6b469d96fbdc9786e01d76c4}{temp\+\_\+c}}, and \mbox{\hyperlink{a00029_aec9f19843278454adbd9bc9dd50f8175}{ventry()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_af71a1ee5c7b8b225825e744376c3dc2a}{customer()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a20aeb1971c3cc4b65916cf9bae9ba161_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a20aeb1971c3cc4b65916cf9bae9ba161_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_af71a1ee5c7b8b225825e744376c3dc2a}\label{a00029_af71a1ee5c7b8b225825e744376c3dc2a}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!customer@{customer}}
+\index{customer@{customer}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{customer()}{customer()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{a00050}{customer}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a039d55c986652a41321402fe8e41baa5}{animation()}}, \mbox{\hyperlink{a00029_a1ed6b5480572a72f1d9714aea6539108}{cust\+\_\+entry()}}, \mbox{\hyperlink{a00029_ae5545c8c6e7283029407cd2d721f39f6}{cust\+\_\+list()}}, \mbox{\hyperlink{a00029_ae10f58ce141ddadfb762cff282943a88}{cust\+\_\+search()}}, \mbox{\hyperlink{a00029_a20aeb1971c3cc4b65916cf9bae9ba161}{cust\+\_\+update()}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_a48faeaeb1d8f8ed5927570474d6fe569}{main\+\_\+box()}}, and \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_ae10f58ce141ddadfb762cff282943a88}{cust\+\_\+search()}}, and \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/d16/a00029_af71a1ee5c7b8b225825e744376c3dc2a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_af71a1ee5c7b8b225825e744376c3dc2a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a3a59181ef40c199703c86a98b9e84be6}\label{a00029_a3a59181ef40c199703c86a98b9e84be6}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!getcust\_id@{getcust\_id}}
+\index{getcust\_id@{getcust\_id}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{getcust\_id()}{getcust\_id()}}
+{\footnotesize\ttfamily int getcust\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00050_af4b7144029ac656b7ae5588a2953133a}{customer\+::city}}, \mbox{\hyperlink{a00050_ab32b145de10d7776d4dcedbf91056301}{customer\+::cust\+\_\+id}}, \mbox{\hyperlink{a00050_aa8d76c88c4663df20ec5cfdf03424d6c}{customer\+::cust\+\_\+name}}, \mbox{\hyperlink{a00050_a3d6349526ad5488177e6366bb9626bc6}{customer\+::email}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00050_a4f97f5e78b107298dd27adf8db3788b4}{customer\+::mob\+\_\+no}}, and \mbox{\hyperlink{a00029_a2c3372ad6b469d96fbdc9786e01d76c4}{temp\+\_\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a1ed6b5480572a72f1d9714aea6539108}{cust\+\_\+entry()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{d5/d16/a00029_a3a59181ef40c199703c86a98b9e84be6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a3a59181ef40c199703c86a98b9e84be6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_af785d65f8356a9b833b483d5e24b78cb}\label{a00029_af785d65f8356a9b833b483d5e24b78cb}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!getsupp\_id@{getsupp\_id}}
+\index{getsupp\_id@{getsupp\_id}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{getsupp\_id()}{getsupp\_id()}}
+{\footnotesize\ttfamily int getsupp\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00046_aad9b85214206d119743ec40b05a671b7}{supplier\+::city}}, \mbox{\hyperlink{a00046_aeb446bacb40f6036e517056941c087ca}{supplier\+::email}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00046_ae7d691334101d5e81e0fba719c080a66}{supplier\+::mob\+\_\+no}}, \mbox{\hyperlink{a00046_aa37fbc652cca886004dc37d5c011b099}{supplier\+::supp\+\_\+id}}, \mbox{\hyperlink{a00046_a36c59f88454cb6eabd33b16bafefb73d}{supplier\+::supp\+\_\+name}}, and \mbox{\hyperlink{a00029_a5c99dd2f37e157da891009961ee11c71}{temp1}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a431bc695506f0b701c7e418ff5fc53c8}{supp\+\_\+entry()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{d5/d16/a00029_af785d65f8356a9b833b483d5e24b78cb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_af785d65f8356a9b833b483d5e24b78cb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_ae824443b3f661414ba1f2718e17fe97d}\label{a00029_ae824443b3f661414ba1f2718e17fe97d}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!gotoxy@{gotoxy}}
+\index{gotoxy@{gotoxy}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{gotoxy()}{gotoxy()}}
+{\footnotesize\ttfamily void gotoxy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_afd9018d32867a27a7ce20ae665e80462}{coord}}, and \mbox{\hyperlink{a00029_adfce14539463c64e68cd82af8d8e8fad}{x}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a789158f29284880f41199bede88272e3}{about()}}, \mbox{\hyperlink{a00029_a039d55c986652a41321402fe8e41baa5}{animation()}}, \mbox{\hyperlink{a00029_adf0f03a768c327f84e6c1749ea46d448}{bill()}}, \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00029_a9e518ba024db6fc9ff8d69bdc4d75f79}{box1()}}, \mbox{\hyperlink{a00029_a1ed6b5480572a72f1d9714aea6539108}{cust\+\_\+entry()}}, \mbox{\hyperlink{a00029_ae5545c8c6e7283029407cd2d721f39f6}{cust\+\_\+list()}}, \mbox{\hyperlink{a00029_ae10f58ce141ddadfb762cff282943a88}{cust\+\_\+search()}}, \mbox{\hyperlink{a00029_a20aeb1971c3cc4b65916cf9bae9ba161}{cust\+\_\+update()}}, \mbox{\hyperlink{a00029_af71a1ee5c7b8b225825e744376c3dc2a}{customer()}}, \mbox{\hyperlink{a00029_a3a59181ef40c199703c86a98b9e84be6}{getcust\+\_\+id()}}, \mbox{\hyperlink{a00029_af785d65f8356a9b833b483d5e24b78cb}{getsupp\+\_\+id()}}, \mbox{\hyperlink{a00029_a9c5bfef579a494196b6100ab478c6681}{lbox()}}, \mbox{\hyperlink{a00029_a48faeaeb1d8f8ed5927570474d6fe569}{main\+\_\+box()}}, \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}, \mbox{\hyperlink{a00029_a2904e53727e9438de807065db95db971}{medi\+\_\+entry()}}, \mbox{\hyperlink{a00029_aa777bd026911bc07fa05f8a534573291}{medi\+\_\+sale()}}, \mbox{\hyperlink{a00029_a834e67bf52e80b33d850e2ebc7533fb4}{medi\+\_\+search()}}, \mbox{\hyperlink{a00029_a847ba849cf6bb3d5e048ad1f0daa35db}{medicine()}}, \mbox{\hyperlink{a00029_abb6f01f09afaf49c585b2ee6bc970cdd}{profit\+\_\+rpt()}}, \mbox{\hyperlink{a00029_a67b812b7a08365e3b2d8516e9688a062}{pur\+\_\+rpt()}}, \mbox{\hyperlink{a00029_acc903cc7748066f4e6c29961be6f060d}{pur\+\_\+rpt\+\_\+daily()}}, \mbox{\hyperlink{a00029_ab052b833376161ca1ab9f7653e8be73a}{remainder\+Qty()}}, \mbox{\hyperlink{a00029_ac34b034e6b88b567768b483d1014864d}{report\+\_\+menu()}}, \mbox{\hyperlink{a00029_a3d414c641783f76d07d932c9a6c1e1e5}{sale\+\_\+rpt()}}, \mbox{\hyperlink{a00029_a348367e6a182fa74256fa68fc0bd0759}{sale\+\_\+rpt\+\_\+daily()}}, \mbox{\hyperlink{a00029_acfa13f24e1780367b83bd2531f17d850}{search()}}, \mbox{\hyperlink{a00029_a2c5e292079908d89dc77cae01b55415e}{search\+\_\+cid()}}, \mbox{\hyperlink{a00029_af70abcd650764333e5aad7038d1a0577}{search\+\_\+cname()}}, \mbox{\hyperlink{a00029_a852e86c180b2d2c06d691c9043664956}{search\+\_\+id()}}, \mbox{\hyperlink{a00029_a3cd4ad50ed0a463ca93d117a6ab7f10b}{search\+\_\+name()}}, \mbox{\hyperlink{a00029_af482c6562bb2350ab4bc326319f4a765}{stock()}}, \mbox{\hyperlink{a00029_a3ec5c75dfcb02492aed80f705deecb26}{sup\+\_\+update()}}, \mbox{\hyperlink{a00029_a431bc695506f0b701c7e418ff5fc53c8}{supp\+\_\+entry()}}, \mbox{\hyperlink{a00029_a5e99770f3e0688617aea5914534ded9c}{supp\+\_\+list()}}, \mbox{\hyperlink{a00029_ab2ecd9a6ceaa8234631a9803607776cf}{supplier()}}, \mbox{\hyperlink{a00029_ad2c584e6472d5514c2fa94aea1697bb7}{t()}}, \mbox{\hyperlink{a00029_a63c41f7ad60f1ee019659bff9af05431}{update\+\_\+stock()}}, \mbox{\hyperlink{a00029_afa9cfee312a432cac05d5539e02c528b}{wbox()}}, and \mbox{\hyperlink{a00029_a236e454e493fc9b262f746305660a2eb}{welcome()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/d16/a00029_ae824443b3f661414ba1f2718e17fe97d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a9c5bfef579a494196b6100ab478c6681}\label{a00029_a9c5bfef579a494196b6100ab478c6681}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!lbox@{lbox}}
+\index{lbox@{lbox}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{lbox()}{lbox()}}
+{\footnotesize\ttfamily void lbox (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, and \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a1ed6b5480572a72f1d9714aea6539108}{cust\+\_\+entry()}}, \mbox{\hyperlink{a00029_ae5545c8c6e7283029407cd2d721f39f6}{cust\+\_\+list()}}, \mbox{\hyperlink{a00029_a20aeb1971c3cc4b65916cf9bae9ba161}{cust\+\_\+update()}}, \mbox{\hyperlink{a00029_a2904e53727e9438de807065db95db971}{medi\+\_\+entry()}}, \mbox{\hyperlink{a00029_a834e67bf52e80b33d850e2ebc7533fb4}{medi\+\_\+search()}}, \mbox{\hyperlink{a00029_abb6f01f09afaf49c585b2ee6bc970cdd}{profit\+\_\+rpt()}}, \mbox{\hyperlink{a00029_a67b812b7a08365e3b2d8516e9688a062}{pur\+\_\+rpt()}}, \mbox{\hyperlink{a00029_acc903cc7748066f4e6c29961be6f060d}{pur\+\_\+rpt\+\_\+daily()}}, \mbox{\hyperlink{a00029_a3d414c641783f76d07d932c9a6c1e1e5}{sale\+\_\+rpt()}}, \mbox{\hyperlink{a00029_a348367e6a182fa74256fa68fc0bd0759}{sale\+\_\+rpt\+\_\+daily()}}, \mbox{\hyperlink{a00029_af482c6562bb2350ab4bc326319f4a765}{stock()}}, \mbox{\hyperlink{a00029_a3ec5c75dfcb02492aed80f705deecb26}{sup\+\_\+update()}}, \mbox{\hyperlink{a00029_a431bc695506f0b701c7e418ff5fc53c8}{supp\+\_\+entry()}}, and \mbox{\hyperlink{a00029_a5e99770f3e0688617aea5914534ded9c}{supp\+\_\+list()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{d5/d16/a00029_a9c5bfef579a494196b6100ab478c6681_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a9c5bfef579a494196b6100ab478c6681_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_ac5d60da3db82e6a830259b6e897a05d7}\label{a00029_ac5d60da3db82e6a830259b6e897a05d7}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!linkfloat@{linkfloat}}
+\index{linkfloat@{linkfloat}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{linkfloat()}{linkfloat()}}
+{\footnotesize\ttfamily void linkfloat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00029_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{a00029_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!main@{main}}
+\index{main@{main}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}, and \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/d16/a00029_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a48faeaeb1d8f8ed5927570474d6fe569}\label{a00029_a48faeaeb1d8f8ed5927570474d6fe569}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!main\_box@{main\_box}}
+\index{main\_box@{main\_box}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{main\_box()}{main\_box()}}
+{\footnotesize\ttfamily void main\+\_\+box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, and \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_ae10f58ce141ddadfb762cff282943a88}{cust\+\_\+search()}}, \mbox{\hyperlink{a00029_af71a1ee5c7b8b225825e744376c3dc2a}{customer()}}, \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}, \mbox{\hyperlink{a00029_a847ba849cf6bb3d5e048ad1f0daa35db}{medicine()}}, \mbox{\hyperlink{a00029_ac34b034e6b88b567768b483d1014864d}{report\+\_\+menu()}}, \mbox{\hyperlink{a00029_acfa13f24e1780367b83bd2531f17d850}{search()}}, and \mbox{\hyperlink{a00029_ab2ecd9a6ceaa8234631a9803607776cf}{supplier()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{d5/d16/a00029_a48faeaeb1d8f8ed5927570474d6fe569_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a48faeaeb1d8f8ed5927570474d6fe569_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a885611589f6294afada89fe88362e863}\label{a00029_a885611589f6294afada89fe88362e863}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!main\_menu@{main\_menu}}
+\index{main\_menu@{main\_menu}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{main\_menu()}{main\_menu()}}
+{\footnotesize\ttfamily void main\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a789158f29284880f41199bede88272e3}{about()}}, \mbox{\hyperlink{a00029_a039d55c986652a41321402fe8e41baa5}{animation()}}, \mbox{\hyperlink{a00029_adf0f03a768c327f84e6c1749ea46d448}{bill()}}, \mbox{\hyperlink{a00029_a9e518ba024db6fc9ff8d69bdc4d75f79}{box1()}}, \mbox{\hyperlink{a00029_af71a1ee5c7b8b225825e744376c3dc2a}{customer()}}, \mbox{\hyperlink{a00014_a358d2e2397ca11ccd17553e3c40e7901}{exit()}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_a48faeaeb1d8f8ed5927570474d6fe569}{main\+\_\+box()}}, \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}, \mbox{\hyperlink{a00029_a847ba849cf6bb3d5e048ad1f0daa35db}{medicine()}}, \mbox{\hyperlink{a00029_ab052b833376161ca1ab9f7653e8be73a}{remainder\+Qty()}}, \mbox{\hyperlink{a00029_ac34b034e6b88b567768b483d1014864d}{report\+\_\+menu()}}, \mbox{\hyperlink{a00029_ab2ecd9a6ceaa8234631a9803607776cf}{supplier()}}, and \mbox{\hyperlink{a00029_ad2c584e6472d5514c2fa94aea1697bb7}{t()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a789158f29284880f41199bede88272e3}{about()}}, \mbox{\hyperlink{a00029_af71a1ee5c7b8b225825e744376c3dc2a}{customer()}}, \mbox{\hyperlink{a00014_abaee5cca5835ef2be031310b46c94c96}{d\+\_\+mainmenu()}}, \mbox{\hyperlink{a00029_ae66f6b31b5ad750f1fe042a706a4e3d4}{main()}}, \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}, \mbox{\hyperlink{a00029_a847ba849cf6bb3d5e048ad1f0daa35db}{medicine()}}, \mbox{\hyperlink{a00029_ac34b034e6b88b567768b483d1014864d}{report\+\_\+menu()}}, \mbox{\hyperlink{a00029_af482c6562bb2350ab4bc326319f4a765}{stock()}}, and \mbox{\hyperlink{a00029_ab2ecd9a6ceaa8234631a9803607776cf}{supplier()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/d16/a00029_a885611589f6294afada89fe88362e863_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a885611589f6294afada89fe88362e863_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a2904e53727e9438de807065db95db971}\label{a00029_a2904e53727e9438de807065db95db971}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!medi\_entry@{medi\_entry}}
+\index{medi\_entry@{medi\_entry}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{medi\_entry()}{medi\_entry()}}
+{\footnotesize\ttfamily void medi\+\_\+entry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a8e4f1f910ada5c00a94ac0745a5e1e23}{a}}, \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00042_a8806abc78b671b82a011a0e0d7e7f874}{medical\+::cabnit}}, \mbox{\hyperlink{a00042_a69498545b4f1567e1aab0c6f6b27e1b0}{medical\+::comp\+\_\+name}}, \mbox{\hyperlink{a00042_a5d116292c55095d7ea7624d180aea661}{medical\+::cost}}, \mbox{\hyperlink{a00042_ad52fe430b3a4390ebfbeb7e7b0c411cb}{medical\+::exp\+\_\+date}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00042_a7bef61f38e8688be5d1122534866a719}{medical\+::id}}, \mbox{\hyperlink{a00029_a9c5bfef579a494196b6100ab478c6681}{lbox()}}, \mbox{\hyperlink{a00042_a06c8be6abb92f332b11d9d66400f33b3}{medical\+::manu\+\_\+date}}, \mbox{\hyperlink{a00029_a2904e53727e9438de807065db95db971}{medi\+\_\+entry()}}, \mbox{\hyperlink{a00062_a89566152997c8f7581cb52ebfdfda40f}{purchase\+\_\+report\+::medi\+\_\+id}}, \mbox{\hyperlink{a00042_acf3f614660fd92e47d46d787a3d1887d}{medical\+::medi\+\_\+name}}, \mbox{\hyperlink{a00062_aac406c2d071db2669f7e37346de834ad}{purchase\+\_\+report\+::medir\+\_\+name}}, \mbox{\hyperlink{a00029_aef00891a7389583b8ecc010fe8717166}{p\+\_\+r}}, \mbox{\hyperlink{a00029_aa79194a5486deb48ea2806f4043033a7}{ptr}}, \mbox{\hyperlink{a00029_ad442d3499cf22a71e4dceca3e740846f}{ptrp\+\_\+r}}, \mbox{\hyperlink{a00062_a328481ccdac04fd71d7ae4233457ae98}{purchase\+\_\+report\+::qty}}, \mbox{\hyperlink{a00042_a1a607749506654eaba1105fa2b0c2e5f}{medical\+::quantity}}, \mbox{\hyperlink{a00042_a9384911fad9d9d2df49071c01889c6f1}{medical\+::rack}}, \mbox{\hyperlink{a00062_a61fb2412bedce5d418f77a5e9b7f98a6}{purchase\+\_\+report\+::rate}}, \mbox{\hyperlink{a00042_a166606eadad0fce42f795dc65f2d56cf}{medical\+::sale}}, \mbox{\hyperlink{a00062_a3ba9d7db2b52a80e1567ff67369581b2}{purchase\+\_\+report\+::s\+Day}}, \mbox{\hyperlink{a00062_ae1e82c70e15fff027bb252ac32e2cc37}{purchase\+\_\+report\+::s\+Month}}, \mbox{\hyperlink{a00042_a2c9c50214398958041a058bc82386259}{medical\+::supp\+\_\+name}}, \mbox{\hyperlink{a00062_ab54489850bcebd1ce34d746583a8861d}{purchase\+\_\+report\+::supp\+\_\+name}}, \mbox{\hyperlink{a00062_ae3bf535f684e1d0349c62f59d7ba68f1}{purchase\+\_\+report\+::s\+Year}}, \mbox{\hyperlink{a00029_ad2c584e6472d5514c2fa94aea1697bb7}{t()}}, \mbox{\hyperlink{a00029_a2e80494afb367a3d3b88bf6a6caf4422}{temp}}, \mbox{\hyperlink{a00042_a9f1f96eba1aede0b4dc433b98fbb3672}{medical\+::total}}, \mbox{\hyperlink{a00062_aaedb083fc953c4c6599ac247004060ea}{purchase\+\_\+report\+::total}}, \mbox{\hyperlink{a00042_ae2cbafe93d4973b5fed5bc9324f764af}{medical\+::unit}}, and \mbox{\hyperlink{a00029_aec9f19843278454adbd9bc9dd50f8175}{ventry()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a2904e53727e9438de807065db95db971}{medi\+\_\+entry()}}, and \mbox{\hyperlink{a00029_a847ba849cf6bb3d5e048ad1f0daa35db}{medicine()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a2904e53727e9438de807065db95db971_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a2904e53727e9438de807065db95db971_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_aa777bd026911bc07fa05f8a534573291}\label{a00029_aa777bd026911bc07fa05f8a534573291}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!medi\_sale@{medi\_sale}}
+\index{medi\_sale@{medi\_sale}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{medi\_sale()}{medi\_sale()}}
+{\footnotesize\ttfamily void medi\+\_\+sale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a8e4f1f910ada5c00a94ac0745a5e1e23}{a}}, \mbox{\hyperlink{a00029_ae458264d7b7cdd3439fd12c93be3df2f}{bil}}, \mbox{\hyperlink{a00054_a0ab4a88322cce0d952c3d8281785b721}{bill\+::billno}}, \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00042_a2b49545c3aa4c408c0f3f3c765c8407b}{medical\+::bye}}, \mbox{\hyperlink{a00050_af4b7144029ac656b7ae5588a2953133a}{customer\+::city}}, \mbox{\hyperlink{a00054_a4019348da82cb027d811b051cc82cc47}{bill\+::cname}}, \mbox{\hyperlink{a00042_a5d116292c55095d7ea7624d180aea661}{medical\+::cost}}, \mbox{\hyperlink{a00050_ab32b145de10d7776d4dcedbf91056301}{customer\+::cust\+\_\+id}}, \mbox{\hyperlink{a00050_aa8d76c88c4663df20ec5cfdf03424d6c}{customer\+::cust\+\_\+name}}, \mbox{\hyperlink{a00058_a087444505e02290fdefc61078816d1be}{sales\+\_\+report\+::cust\+\_\+name}}, \mbox{\hyperlink{a00054_a3412c377d0dbb421c731e9fdd9a9c48e}{bill\+::day}}, \mbox{\hyperlink{a00050_a3d6349526ad5488177e6366bb9626bc6}{customer\+::email}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}, \mbox{\hyperlink{a00042_a7bef61f38e8688be5d1122534866a719}{medical\+::id}}, \mbox{\hyperlink{a00058_a3efd68cbfa4bfeaa6bfccd24cfb35bb6}{sales\+\_\+report\+::medi\+\_\+id}}, \mbox{\hyperlink{a00066_ad11210b1063455819bb58e516d8eeb9d}{profit\+\_\+report\+::medi\+\_\+id}}, \mbox{\hyperlink{a00042_acf3f614660fd92e47d46d787a3d1887d}{medical\+::medi\+\_\+name}}, \mbox{\hyperlink{a00054_a72e6ab206fa36c8ddf50c2294f27e234}{bill\+::medi\+\_\+qty}}, \mbox{\hyperlink{a00054_a9eef747bbb31aeef2adbfacada53bcb5}{bill\+::medi\+\_\+rate}}, \mbox{\hyperlink{a00054_a3c75226cfb4f20604d50829bd5928ace}{bill\+::mediname}}, \mbox{\hyperlink{a00058_aae8faa8f5b93e041eb34193f1205e6fd}{sales\+\_\+report\+::medir\+\_\+name}}, \mbox{\hyperlink{a00066_a1919eb573630fcafad1774edb1f843b6}{profit\+\_\+report\+::medir\+\_\+name}}, \mbox{\hyperlink{a00050_a4f97f5e78b107298dd27adf8db3788b4}{customer\+::mob\+\_\+no}}, \mbox{\hyperlink{a00054_a835bb2d96e731929f9c6d874091d6a4c}{bill\+::month}}, \mbox{\hyperlink{a00029_af1c22d3cf78bc4d36a93769ee70a9c90}{pr\+\_\+r}}, \mbox{\hyperlink{a00066_a3885085e8f6a7504170f62537bbd5d31}{profit\+\_\+report\+::profit}}, \mbox{\hyperlink{a00029_aa79194a5486deb48ea2806f4043033a7}{ptr}}, \mbox{\hyperlink{a00029_aa31860e65a1b30e70af09ecef7b86122}{ptr1}}, \mbox{\hyperlink{a00029_a071b52393e756c6ab5c380feac24160c}{ptrpr\+\_\+r}}, \mbox{\hyperlink{a00029_aceb678408b5a75a63b9fbe52f3faae17}{ptrs\+\_\+r}}, \mbox{\hyperlink{a00042_a3c55dfeb40ac991606f011d5f0127b8e}{medical\+::qty}}, \mbox{\hyperlink{a00058_a6c9f0c1d6935782a6ca8e8157079b0c7}{sales\+\_\+report\+::qty}}, \mbox{\hyperlink{a00066_a40fb9482a2a4c7b88cf2e989edeefbe2}{profit\+\_\+report\+::qty}}, \mbox{\hyperlink{a00042_a1a607749506654eaba1105fa2b0c2e5f}{medical\+::quantity}}, \mbox{\hyperlink{a00058_ae2a7ea4e63e9b7187e15fe870f2ab9a3}{sales\+\_\+report\+::rate}}, \mbox{\hyperlink{a00066_a3309b1334520cad8c3b566d891ca428d}{profit\+\_\+report\+::rate}}, \mbox{\hyperlink{a00029_a75c9d0c153b32f99ea7261a829c5437a}{s\+\_\+r}}, \mbox{\hyperlink{a00042_a166606eadad0fce42f795dc65f2d56cf}{medical\+::sale}}, \mbox{\hyperlink{a00058_a4d8fd0fcb9df74e64060d98d42fdafba}{sales\+\_\+report\+::s\+Day}}, \mbox{\hyperlink{a00066_a096773df7ae584df350d0cf5f4d10b7d}{profit\+\_\+report\+::s\+Day}}, \mbox{\hyperlink{a00058_a61d784ced3b0923ded87e5bcd6979bcf}{sales\+\_\+report\+::s\+Month}}, \mbox{\hyperlink{a00066_aab64681189d7cf93f408c3f31d40f775}{profit\+\_\+report\+::s\+Month}}, \mbox{\hyperlink{a00058_ab393fd060df0ffd0066a3b5837588a5f}{sales\+\_\+report\+::s\+Year}}, \mbox{\hyperlink{a00066_a1588b84fb5adf17349d40cfb7b1c8b52}{profit\+\_\+report\+::s\+Year}}, \mbox{\hyperlink{a00029_ad2c584e6472d5514c2fa94aea1697bb7}{t()}}, \mbox{\hyperlink{a00029_a2e80494afb367a3d3b88bf6a6caf4422}{temp}}, \mbox{\hyperlink{a00029_a2c3372ad6b469d96fbdc9786e01d76c4}{temp\+\_\+c}}, \mbox{\hyperlink{a00042_a9f1f96eba1aede0b4dc433b98fbb3672}{medical\+::total}}, \mbox{\hyperlink{a00054_ada1ea5b9c7b34b39e8d58c7d6261c42b}{bill\+::total}}, \mbox{\hyperlink{a00058_aa3535843dea9f5c34ad4179ae9a67b10}{sales\+\_\+report\+::total}}, \mbox{\hyperlink{a00042_ae2cbafe93d4973b5fed5bc9324f764af}{medical\+::unit}}, \mbox{\hyperlink{a00066_aa8bc9248307da64399d1404549295846}{profit\+\_\+report\+::unit}}, \mbox{\hyperlink{a00029_aec9f19843278454adbd9bc9dd50f8175}{ventry()}}, \mbox{\hyperlink{a00029_adfce14539463c64e68cd82af8d8e8fad}{x}}, and \mbox{\hyperlink{a00054_acb8538423cf914420c42bc7eb8cbad09}{bill\+::year}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a847ba849cf6bb3d5e048ad1f0daa35db}{medicine()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_aa777bd026911bc07fa05f8a534573291_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_aa777bd026911bc07fa05f8a534573291_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a834e67bf52e80b33d850e2ebc7533fb4}\label{a00029_a834e67bf52e80b33d850e2ebc7533fb4}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!medi\_search@{medi\_search}}
+\index{medi\_search@{medi\_search}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{medi\_search()}{medi\_search()}}
+{\footnotesize\ttfamily void medi\+\_\+search (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00014_a358d2e2397ca11ccd17553e3c40e7901}{exit()}}, \mbox{\hyperlink{a00042_ad52fe430b3a4390ebfbeb7e7b0c411cb}{medical\+::exp\+\_\+date}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}, \mbox{\hyperlink{a00042_a7bef61f38e8688be5d1122534866a719}{medical\+::id}}, \mbox{\hyperlink{a00029_a9c5bfef579a494196b6100ab478c6681}{lbox()}}, \mbox{\hyperlink{a00042_acf3f614660fd92e47d46d787a3d1887d}{medical\+::medi\+\_\+name}}, \mbox{\hyperlink{a00029_aa31860e65a1b30e70af09ecef7b86122}{ptr1}}, \mbox{\hyperlink{a00042_a1a607749506654eaba1105fa2b0c2e5f}{medical\+::quantity}}, \mbox{\hyperlink{a00042_a2c9c50214398958041a058bc82386259}{medical\+::supp\+\_\+name}}, and \mbox{\hyperlink{a00029_a2e80494afb367a3d3b88bf6a6caf4422}{temp}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a847ba849cf6bb3d5e048ad1f0daa35db}{medicine()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{d5/d16/a00029_a834e67bf52e80b33d850e2ebc7533fb4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a834e67bf52e80b33d850e2ebc7533fb4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a847ba849cf6bb3d5e048ad1f0daa35db}\label{a00029_a847ba849cf6bb3d5e048ad1f0daa35db}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!medicine@{medicine}}
+\index{medicine@{medicine}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{medicine()}{medicine()}}
+{\footnotesize\ttfamily void medicine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_a48faeaeb1d8f8ed5927570474d6fe569}{main\+\_\+box()}}, \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}, \mbox{\hyperlink{a00029_a2904e53727e9438de807065db95db971}{medi\+\_\+entry()}}, \mbox{\hyperlink{a00029_aa777bd026911bc07fa05f8a534573291}{medi\+\_\+sale()}}, \mbox{\hyperlink{a00029_a834e67bf52e80b33d850e2ebc7533fb4}{medi\+\_\+search()}}, and \mbox{\hyperlink{a00029_af482c6562bb2350ab4bc326319f4a765}{stock()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/d16/a00029_a847ba849cf6bb3d5e048ad1f0daa35db_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a847ba849cf6bb3d5e048ad1f0daa35db_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_abb6f01f09afaf49c585b2ee6bc970cdd}\label{a00029_abb6f01f09afaf49c585b2ee6bc970cdd}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!profit\_rpt@{profit\_rpt}}
+\index{profit\_rpt@{profit\_rpt}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{profit\_rpt()}{profit\_rpt()}}
+{\footnotesize\ttfamily void profit\+\_\+rpt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_a9c5bfef579a494196b6100ab478c6681}{lbox()}}, \mbox{\hyperlink{a00066_ad11210b1063455819bb58e516d8eeb9d}{profit\+\_\+report\+::medi\+\_\+id}}, \mbox{\hyperlink{a00066_a1919eb573630fcafad1774edb1f843b6}{profit\+\_\+report\+::medir\+\_\+name}}, \mbox{\hyperlink{a00029_af1c22d3cf78bc4d36a93769ee70a9c90}{pr\+\_\+r}}, \mbox{\hyperlink{a00066_a3885085e8f6a7504170f62537bbd5d31}{profit\+\_\+report\+::profit}}, \mbox{\hyperlink{a00029_a071b52393e756c6ab5c380feac24160c}{ptrpr\+\_\+r}}, \mbox{\hyperlink{a00066_a40fb9482a2a4c7b88cf2e989edeefbe2}{profit\+\_\+report\+::qty}}, \mbox{\hyperlink{a00066_a3309b1334520cad8c3b566d891ca428d}{profit\+\_\+report\+::rate}}, \mbox{\hyperlink{a00066_a096773df7ae584df350d0cf5f4d10b7d}{profit\+\_\+report\+::s\+Day}}, \mbox{\hyperlink{a00066_aab64681189d7cf93f408c3f31d40f775}{profit\+\_\+report\+::s\+Month}}, \mbox{\hyperlink{a00066_a1588b84fb5adf17349d40cfb7b1c8b52}{profit\+\_\+report\+::s\+Year}}, \mbox{\hyperlink{a00029_ad2c584e6472d5514c2fa94aea1697bb7}{t()}}, and \mbox{\hyperlink{a00066_aa8bc9248307da64399d1404549295846}{profit\+\_\+report\+::unit}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_ac34b034e6b88b567768b483d1014864d}{report\+\_\+menu()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{d5/d16/a00029_abb6f01f09afaf49c585b2ee6bc970cdd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_abb6f01f09afaf49c585b2ee6bc970cdd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a67b812b7a08365e3b2d8516e9688a062}\label{a00029_a67b812b7a08365e3b2d8516e9688a062}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!pur\_rpt@{pur\_rpt}}
+\index{pur\_rpt@{pur\_rpt}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{pur\_rpt()}{pur\_rpt()}}
+{\footnotesize\ttfamily void pur\+\_\+rpt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00014_a358d2e2397ca11ccd17553e3c40e7901}{exit()}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_a9c5bfef579a494196b6100ab478c6681}{lbox()}}, \mbox{\hyperlink{a00062_a89566152997c8f7581cb52ebfdfda40f}{purchase\+\_\+report\+::medi\+\_\+id}}, \mbox{\hyperlink{a00062_aac406c2d071db2669f7e37346de834ad}{purchase\+\_\+report\+::medir\+\_\+name}}, \mbox{\hyperlink{a00029_aef00891a7389583b8ecc010fe8717166}{p\+\_\+r}}, \mbox{\hyperlink{a00029_ad442d3499cf22a71e4dceca3e740846f}{ptrp\+\_\+r}}, \mbox{\hyperlink{a00062_a328481ccdac04fd71d7ae4233457ae98}{purchase\+\_\+report\+::qty}}, \mbox{\hyperlink{a00062_a61fb2412bedce5d418f77a5e9b7f98a6}{purchase\+\_\+report\+::rate}}, \mbox{\hyperlink{a00062_a3ba9d7db2b52a80e1567ff67369581b2}{purchase\+\_\+report\+::s\+Day}}, \mbox{\hyperlink{a00062_ae1e82c70e15fff027bb252ac32e2cc37}{purchase\+\_\+report\+::s\+Month}}, \mbox{\hyperlink{a00062_ab54489850bcebd1ce34d746583a8861d}{purchase\+\_\+report\+::supp\+\_\+name}}, \mbox{\hyperlink{a00062_ae3bf535f684e1d0349c62f59d7ba68f1}{purchase\+\_\+report\+::s\+Year}}, \mbox{\hyperlink{a00029_ad2c584e6472d5514c2fa94aea1697bb7}{t()}}, and \mbox{\hyperlink{a00062_aaedb083fc953c4c6599ac247004060ea}{purchase\+\_\+report\+::total}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_ac34b034e6b88b567768b483d1014864d}{report\+\_\+menu()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{d5/d16/a00029_a67b812b7a08365e3b2d8516e9688a062_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a67b812b7a08365e3b2d8516e9688a062_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_acc903cc7748066f4e6c29961be6f060d}\label{a00029_acc903cc7748066f4e6c29961be6f060d}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!pur\_rpt\_daily@{pur\_rpt\_daily}}
+\index{pur\_rpt\_daily@{pur\_rpt\_daily}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{pur\_rpt\_daily()}{pur\_rpt\_daily()}}
+{\footnotesize\ttfamily void pur\+\_\+rpt\+\_\+daily (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00014_a358d2e2397ca11ccd17553e3c40e7901}{exit()}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_a9c5bfef579a494196b6100ab478c6681}{lbox()}}, \mbox{\hyperlink{a00062_a89566152997c8f7581cb52ebfdfda40f}{purchase\+\_\+report\+::medi\+\_\+id}}, \mbox{\hyperlink{a00062_aac406c2d071db2669f7e37346de834ad}{purchase\+\_\+report\+::medir\+\_\+name}}, \mbox{\hyperlink{a00029_aef00891a7389583b8ecc010fe8717166}{p\+\_\+r}}, \mbox{\hyperlink{a00029_ad442d3499cf22a71e4dceca3e740846f}{ptrp\+\_\+r}}, \mbox{\hyperlink{a00062_a328481ccdac04fd71d7ae4233457ae98}{purchase\+\_\+report\+::qty}}, \mbox{\hyperlink{a00062_a61fb2412bedce5d418f77a5e9b7f98a6}{purchase\+\_\+report\+::rate}}, \mbox{\hyperlink{a00062_a3ba9d7db2b52a80e1567ff67369581b2}{purchase\+\_\+report\+::s\+Day}}, \mbox{\hyperlink{a00062_ae1e82c70e15fff027bb252ac32e2cc37}{purchase\+\_\+report\+::s\+Month}}, \mbox{\hyperlink{a00062_ab54489850bcebd1ce34d746583a8861d}{purchase\+\_\+report\+::supp\+\_\+name}}, \mbox{\hyperlink{a00062_ae3bf535f684e1d0349c62f59d7ba68f1}{purchase\+\_\+report\+::s\+Year}}, \mbox{\hyperlink{a00029_ad2c584e6472d5514c2fa94aea1697bb7}{t()}}, and \mbox{\hyperlink{a00062_aaedb083fc953c4c6599ac247004060ea}{purchase\+\_\+report\+::total}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_ac34b034e6b88b567768b483d1014864d}{report\+\_\+menu()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{d5/d16/a00029_acc903cc7748066f4e6c29961be6f060d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_acc903cc7748066f4e6c29961be6f060d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_ab052b833376161ca1ab9f7653e8be73a}\label{a00029_ab052b833376161ca1ab9f7653e8be73a}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!remainderQty@{remainderQty}}
+\index{remainderQty@{remainderQty}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{remainderQty()}{remainderQty()}}
+{\footnotesize\ttfamily void remainder\+Qty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00042_acf3f614660fd92e47d46d787a3d1887d}{medical\+::medi\+\_\+name}}, \mbox{\hyperlink{a00029_aa31860e65a1b30e70af09ecef7b86122}{ptr1}}, \mbox{\hyperlink{a00042_a1a607749506654eaba1105fa2b0c2e5f}{medical\+::quantity}}, and \mbox{\hyperlink{a00029_a2e80494afb367a3d3b88bf6a6caf4422}{temp}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{d5/d16/a00029_ab052b833376161ca1ab9f7653e8be73a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_ab052b833376161ca1ab9f7653e8be73a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_ae4499ee0125936e10dde278b4a18c289}\label{a00029_ae4499ee0125936e10dde278b4a18c289}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!report@{report}}
+\index{report@{report}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{report()}{report()}}
+{\footnotesize\ttfamily void report (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{a00029_ac34b034e6b88b567768b483d1014864d}\label{a00029_ac34b034e6b88b567768b483d1014864d}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!report\_menu@{report\_menu}}
+\index{report\_menu@{report\_menu}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{report\_menu()}{report\_menu()}}
+{\footnotesize\ttfamily void report\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_a48faeaeb1d8f8ed5927570474d6fe569}{main\+\_\+box()}}, \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}, \mbox{\hyperlink{a00029_abb6f01f09afaf49c585b2ee6bc970cdd}{profit\+\_\+rpt()}}, \mbox{\hyperlink{a00029_a67b812b7a08365e3b2d8516e9688a062}{pur\+\_\+rpt()}}, \mbox{\hyperlink{a00029_acc903cc7748066f4e6c29961be6f060d}{pur\+\_\+rpt\+\_\+daily()}}, \mbox{\hyperlink{a00029_a3d414c641783f76d07d932c9a6c1e1e5}{sale\+\_\+rpt()}}, and \mbox{\hyperlink{a00029_a348367e6a182fa74256fa68fc0bd0759}{sale\+\_\+rpt\+\_\+daily()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/d16/a00029_ac34b034e6b88b567768b483d1014864d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_ac34b034e6b88b567768b483d1014864d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a3d414c641783f76d07d932c9a6c1e1e5}\label{a00029_a3d414c641783f76d07d932c9a6c1e1e5}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!sale\_rpt@{sale\_rpt}}
+\index{sale\_rpt@{sale\_rpt}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{sale\_rpt()}{sale\_rpt()}}
+{\footnotesize\ttfamily void sale\+\_\+rpt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00058_a087444505e02290fdefc61078816d1be}{sales\+\_\+report\+::cust\+\_\+name}}, \mbox{\hyperlink{a00014_a358d2e2397ca11ccd17553e3c40e7901}{exit()}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_a9c5bfef579a494196b6100ab478c6681}{lbox()}}, \mbox{\hyperlink{a00058_a3efd68cbfa4bfeaa6bfccd24cfb35bb6}{sales\+\_\+report\+::medi\+\_\+id}}, \mbox{\hyperlink{a00058_aae8faa8f5b93e041eb34193f1205e6fd}{sales\+\_\+report\+::medir\+\_\+name}}, \mbox{\hyperlink{a00029_aceb678408b5a75a63b9fbe52f3faae17}{ptrs\+\_\+r}}, \mbox{\hyperlink{a00058_a6c9f0c1d6935782a6ca8e8157079b0c7}{sales\+\_\+report\+::qty}}, \mbox{\hyperlink{a00058_ae2a7ea4e63e9b7187e15fe870f2ab9a3}{sales\+\_\+report\+::rate}}, \mbox{\hyperlink{a00029_a75c9d0c153b32f99ea7261a829c5437a}{s\+\_\+r}}, \mbox{\hyperlink{a00058_a4d8fd0fcb9df74e64060d98d42fdafba}{sales\+\_\+report\+::s\+Day}}, \mbox{\hyperlink{a00058_a61d784ced3b0923ded87e5bcd6979bcf}{sales\+\_\+report\+::s\+Month}}, \mbox{\hyperlink{a00058_ab393fd060df0ffd0066a3b5837588a5f}{sales\+\_\+report\+::s\+Year}}, and \mbox{\hyperlink{a00058_aa3535843dea9f5c34ad4179ae9a67b10}{sales\+\_\+report\+::total}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_ac34b034e6b88b567768b483d1014864d}{report\+\_\+menu()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{d5/d16/a00029_a3d414c641783f76d07d932c9a6c1e1e5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a3d414c641783f76d07d932c9a6c1e1e5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a348367e6a182fa74256fa68fc0bd0759}\label{a00029_a348367e6a182fa74256fa68fc0bd0759}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!sale\_rpt\_daily@{sale\_rpt\_daily}}
+\index{sale\_rpt\_daily@{sale\_rpt\_daily}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{sale\_rpt\_daily()}{sale\_rpt\_daily()}}
+{\footnotesize\ttfamily void sale\+\_\+rpt\+\_\+daily (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00058_a087444505e02290fdefc61078816d1be}{sales\+\_\+report\+::cust\+\_\+name}}, \mbox{\hyperlink{a00014_a358d2e2397ca11ccd17553e3c40e7901}{exit()}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_a9c5bfef579a494196b6100ab478c6681}{lbox()}}, \mbox{\hyperlink{a00058_a3efd68cbfa4bfeaa6bfccd24cfb35bb6}{sales\+\_\+report\+::medi\+\_\+id}}, \mbox{\hyperlink{a00058_aae8faa8f5b93e041eb34193f1205e6fd}{sales\+\_\+report\+::medir\+\_\+name}}, \mbox{\hyperlink{a00029_aceb678408b5a75a63b9fbe52f3faae17}{ptrs\+\_\+r}}, \mbox{\hyperlink{a00058_a6c9f0c1d6935782a6ca8e8157079b0c7}{sales\+\_\+report\+::qty}}, \mbox{\hyperlink{a00058_ae2a7ea4e63e9b7187e15fe870f2ab9a3}{sales\+\_\+report\+::rate}}, \mbox{\hyperlink{a00029_a75c9d0c153b32f99ea7261a829c5437a}{s\+\_\+r}}, \mbox{\hyperlink{a00058_a4d8fd0fcb9df74e64060d98d42fdafba}{sales\+\_\+report\+::s\+Day}}, \mbox{\hyperlink{a00058_a61d784ced3b0923ded87e5bcd6979bcf}{sales\+\_\+report\+::s\+Month}}, \mbox{\hyperlink{a00058_ab393fd060df0ffd0066a3b5837588a5f}{sales\+\_\+report\+::s\+Year}}, and \mbox{\hyperlink{a00058_aa3535843dea9f5c34ad4179ae9a67b10}{sales\+\_\+report\+::total}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_ac34b034e6b88b567768b483d1014864d}{report\+\_\+menu()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{d5/d16/a00029_a348367e6a182fa74256fa68fc0bd0759_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a348367e6a182fa74256fa68fc0bd0759_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_acfa13f24e1780367b83bd2531f17d850}\label{a00029_acfa13f24e1780367b83bd2531f17d850}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!search@{search}}
+\index{search@{search}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily void search (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a039d55c986652a41321402fe8e41baa5}{animation()}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_a48faeaeb1d8f8ed5927570474d6fe569}{main\+\_\+box()}}, \mbox{\hyperlink{a00029_a852e86c180b2d2c06d691c9043664956}{search\+\_\+id()}}, \mbox{\hyperlink{a00029_a3cd4ad50ed0a463ca93d117a6ab7f10b}{search\+\_\+name()}}, and \mbox{\hyperlink{a00029_ab2ecd9a6ceaa8234631a9803607776cf}{supplier()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_ab2ecd9a6ceaa8234631a9803607776cf}{supplier()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/d16/a00029_acfa13f24e1780367b83bd2531f17d850_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_acfa13f24e1780367b83bd2531f17d850_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a2c5e292079908d89dc77cae01b55415e}\label{a00029_a2c5e292079908d89dc77cae01b55415e}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!search\_cid@{search\_cid}}
+\index{search\_cid@{search\_cid}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{search\_cid()}{search\_cid()}}
+{\footnotesize\ttfamily void search\+\_\+cid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00050_af4b7144029ac656b7ae5588a2953133a}{customer\+::city}}, \mbox{\hyperlink{a00050_ab32b145de10d7776d4dcedbf91056301}{customer\+::cust\+\_\+id}}, \mbox{\hyperlink{a00050_aa8d76c88c4663df20ec5cfdf03424d6c}{customer\+::cust\+\_\+name}}, \mbox{\hyperlink{a00050_a3d6349526ad5488177e6366bb9626bc6}{customer\+::email}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}, \mbox{\hyperlink{a00050_a4f97f5e78b107298dd27adf8db3788b4}{customer\+::mob\+\_\+no}}, \mbox{\hyperlink{a00029_aa31860e65a1b30e70af09ecef7b86122}{ptr1}}, and \mbox{\hyperlink{a00029_a2c3372ad6b469d96fbdc9786e01d76c4}{temp\+\_\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_ae10f58ce141ddadfb762cff282943a88}{cust\+\_\+search()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{d5/d16/a00029_a2c5e292079908d89dc77cae01b55415e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a2c5e292079908d89dc77cae01b55415e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_af70abcd650764333e5aad7038d1a0577}\label{a00029_af70abcd650764333e5aad7038d1a0577}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!search\_cname@{search\_cname}}
+\index{search\_cname@{search\_cname}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{search\_cname()}{search\_cname()}}
+{\footnotesize\ttfamily void search\+\_\+cname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00050_af4b7144029ac656b7ae5588a2953133a}{customer\+::city}}, \mbox{\hyperlink{a00050_ab32b145de10d7776d4dcedbf91056301}{customer\+::cust\+\_\+id}}, \mbox{\hyperlink{a00050_aa8d76c88c4663df20ec5cfdf03424d6c}{customer\+::cust\+\_\+name}}, \mbox{\hyperlink{a00050_a3d6349526ad5488177e6366bb9626bc6}{customer\+::email}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}, \mbox{\hyperlink{a00050_a4f97f5e78b107298dd27adf8db3788b4}{customer\+::mob\+\_\+no}}, \mbox{\hyperlink{a00029_aa31860e65a1b30e70af09ecef7b86122}{ptr1}}, and \mbox{\hyperlink{a00029_a2c3372ad6b469d96fbdc9786e01d76c4}{temp\+\_\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_ae10f58ce141ddadfb762cff282943a88}{cust\+\_\+search()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{d5/d16/a00029_af70abcd650764333e5aad7038d1a0577_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_af70abcd650764333e5aad7038d1a0577_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a852e86c180b2d2c06d691c9043664956}\label{a00029_a852e86c180b2d2c06d691c9043664956}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!search\_id@{search\_id}}
+\index{search\_id@{search\_id}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{search\_id()}{search\_id()}}
+{\footnotesize\ttfamily void search\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00046_aad9b85214206d119743ec40b05a671b7}{supplier\+::city}}, \mbox{\hyperlink{a00046_aeb446bacb40f6036e517056941c087ca}{supplier\+::email}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}, \mbox{\hyperlink{a00046_ae7d691334101d5e81e0fba719c080a66}{supplier\+::mob\+\_\+no}}, \mbox{\hyperlink{a00046_aa37fbc652cca886004dc37d5c011b099}{supplier\+::supp\+\_\+id}}, \mbox{\hyperlink{a00046_a36c59f88454cb6eabd33b16bafefb73d}{supplier\+::supp\+\_\+name}}, and \mbox{\hyperlink{a00029_a5c99dd2f37e157da891009961ee11c71}{temp1}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_acfa13f24e1780367b83bd2531f17d850}{search()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{d5/d16/a00029_a852e86c180b2d2c06d691c9043664956_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a852e86c180b2d2c06d691c9043664956_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a3cd4ad50ed0a463ca93d117a6ab7f10b}\label{a00029_a3cd4ad50ed0a463ca93d117a6ab7f10b}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!search\_name@{search\_name}}
+\index{search\_name@{search\_name}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{search\_name()}{search\_name()}}
+{\footnotesize\ttfamily void search\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00046_aad9b85214206d119743ec40b05a671b7}{supplier\+::city}}, \mbox{\hyperlink{a00046_aeb446bacb40f6036e517056941c087ca}{supplier\+::email}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}, \mbox{\hyperlink{a00046_ae7d691334101d5e81e0fba719c080a66}{supplier\+::mob\+\_\+no}}, \mbox{\hyperlink{a00029_aa31860e65a1b30e70af09ecef7b86122}{ptr1}}, \mbox{\hyperlink{a00046_aa37fbc652cca886004dc37d5c011b099}{supplier\+::supp\+\_\+id}}, \mbox{\hyperlink{a00046_a36c59f88454cb6eabd33b16bafefb73d}{supplier\+::supp\+\_\+name}}, and \mbox{\hyperlink{a00029_a5c99dd2f37e157da891009961ee11c71}{temp1}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_acfa13f24e1780367b83bd2531f17d850}{search()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{d5/d16/a00029_a3cd4ad50ed0a463ca93d117a6ab7f10b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a3cd4ad50ed0a463ca93d117a6ab7f10b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_af482c6562bb2350ab4bc326319f4a765}\label{a00029_af482c6562bb2350ab4bc326319f4a765}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!stock@{stock}}
+\index{stock@{stock}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{stock()}{stock()}}
+{\footnotesize\ttfamily void stock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a039d55c986652a41321402fe8e41baa5}{animation()}}, \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00014_a358d2e2397ca11ccd17553e3c40e7901}{exit()}}, \mbox{\hyperlink{a00042_ad52fe430b3a4390ebfbeb7e7b0c411cb}{medical\+::exp\+\_\+date}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}, \mbox{\hyperlink{a00042_a7bef61f38e8688be5d1122534866a719}{medical\+::id}}, \mbox{\hyperlink{a00029_a9c5bfef579a494196b6100ab478c6681}{lbox()}}, \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}, \mbox{\hyperlink{a00042_acf3f614660fd92e47d46d787a3d1887d}{medical\+::medi\+\_\+name}}, \mbox{\hyperlink{a00029_aa31860e65a1b30e70af09ecef7b86122}{ptr1}}, \mbox{\hyperlink{a00042_a1a607749506654eaba1105fa2b0c2e5f}{medical\+::quantity}}, \mbox{\hyperlink{a00042_a2c9c50214398958041a058bc82386259}{medical\+::supp\+\_\+name}}, \mbox{\hyperlink{a00029_a2e80494afb367a3d3b88bf6a6caf4422}{temp}}, and \mbox{\hyperlink{a00029_a63c41f7ad60f1ee019659bff9af05431}{update\+\_\+stock()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a847ba849cf6bb3d5e048ad1f0daa35db}{medicine()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/d16/a00029_af482c6562bb2350ab4bc326319f4a765_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_af482c6562bb2350ab4bc326319f4a765_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a3ec5c75dfcb02492aed80f705deecb26}\label{a00029_a3ec5c75dfcb02492aed80f705deecb26}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!sup\_update@{sup\_update}}
+\index{sup\_update@{sup\_update}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{sup\_update()}{sup\_update()}}
+{\footnotesize\ttfamily void sup\+\_\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00046_aad9b85214206d119743ec40b05a671b7}{supplier\+::city}}, \mbox{\hyperlink{a00046_aeb446bacb40f6036e517056941c087ca}{supplier\+::email}}, \mbox{\hyperlink{a00014_a358d2e2397ca11ccd17553e3c40e7901}{exit()}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}, \mbox{\hyperlink{a00029_a9c5bfef579a494196b6100ab478c6681}{lbox()}}, \mbox{\hyperlink{a00046_ae7d691334101d5e81e0fba719c080a66}{supplier\+::mob\+\_\+no}}, \mbox{\hyperlink{a00029_aa31860e65a1b30e70af09ecef7b86122}{ptr1}}, \mbox{\hyperlink{a00046_aa37fbc652cca886004dc37d5c011b099}{supplier\+::supp\+\_\+id}}, \mbox{\hyperlink{a00046_a36c59f88454cb6eabd33b16bafefb73d}{supplier\+::supp\+\_\+name}}, \mbox{\hyperlink{a00029_a5c99dd2f37e157da891009961ee11c71}{temp1}}, and \mbox{\hyperlink{a00029_aec9f19843278454adbd9bc9dd50f8175}{ventry()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_ab2ecd9a6ceaa8234631a9803607776cf}{supplier()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a3ec5c75dfcb02492aed80f705deecb26_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a3ec5c75dfcb02492aed80f705deecb26_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a431bc695506f0b701c7e418ff5fc53c8}\label{a00029_a431bc695506f0b701c7e418ff5fc53c8}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!supp\_entry@{supp\_entry}}
+\index{supp\_entry@{supp\_entry}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{supp\_entry()}{supp\_entry()}}
+{\footnotesize\ttfamily void supp\+\_\+entry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00046_aad9b85214206d119743ec40b05a671b7}{supplier\+::city}}, \mbox{\hyperlink{a00046_aeb446bacb40f6036e517056941c087ca}{supplier\+::email}}, \mbox{\hyperlink{a00014_a358d2e2397ca11ccd17553e3c40e7901}{exit()}}, \mbox{\hyperlink{a00029_af785d65f8356a9b833b483d5e24b78cb}{getsupp\+\_\+id()}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_a9c5bfef579a494196b6100ab478c6681}{lbox()}}, \mbox{\hyperlink{a00046_ae7d691334101d5e81e0fba719c080a66}{supplier\+::mob\+\_\+no}}, \mbox{\hyperlink{a00046_aa37fbc652cca886004dc37d5c011b099}{supplier\+::supp\+\_\+id}}, \mbox{\hyperlink{a00046_a36c59f88454cb6eabd33b16bafefb73d}{supplier\+::supp\+\_\+name}}, \mbox{\hyperlink{a00029_ad2c584e6472d5514c2fa94aea1697bb7}{t()}}, \mbox{\hyperlink{a00029_a5c99dd2f37e157da891009961ee11c71}{temp1}}, and \mbox{\hyperlink{a00029_aec9f19843278454adbd9bc9dd50f8175}{ventry()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_ab2ecd9a6ceaa8234631a9803607776cf}{supplier()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a431bc695506f0b701c7e418ff5fc53c8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a431bc695506f0b701c7e418ff5fc53c8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a5e99770f3e0688617aea5914534ded9c}\label{a00029_a5e99770f3e0688617aea5914534ded9c}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!supp\_list@{supp\_list}}
+\index{supp\_list@{supp\_list}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{supp\_list()}{supp\_list()}}
+{\footnotesize\ttfamily void supp\+\_\+list (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00046_aad9b85214206d119743ec40b05a671b7}{supplier\+::city}}, \mbox{\hyperlink{a00046_aeb446bacb40f6036e517056941c087ca}{supplier\+::email}}, \mbox{\hyperlink{a00014_a358d2e2397ca11ccd17553e3c40e7901}{exit()}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}, \mbox{\hyperlink{a00029_a9c5bfef579a494196b6100ab478c6681}{lbox()}}, \mbox{\hyperlink{a00046_ae7d691334101d5e81e0fba719c080a66}{supplier\+::mob\+\_\+no}}, \mbox{\hyperlink{a00029_aa31860e65a1b30e70af09ecef7b86122}{ptr1}}, \mbox{\hyperlink{a00046_aa37fbc652cca886004dc37d5c011b099}{supplier\+::supp\+\_\+id}}, \mbox{\hyperlink{a00046_a36c59f88454cb6eabd33b16bafefb73d}{supplier\+::supp\+\_\+name}}, \mbox{\hyperlink{a00029_ad2c584e6472d5514c2fa94aea1697bb7}{t()}}, and \mbox{\hyperlink{a00029_a5c99dd2f37e157da891009961ee11c71}{temp1}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_ab2ecd9a6ceaa8234631a9803607776cf}{supplier()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{d5/d16/a00029_a5e99770f3e0688617aea5914534ded9c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a5e99770f3e0688617aea5914534ded9c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_ab2ecd9a6ceaa8234631a9803607776cf}\label{a00029_ab2ecd9a6ceaa8234631a9803607776cf}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!supplier@{supplier}}
+\index{supplier@{supplier}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{supplier()}{supplier()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{a00046}{supplier}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a039d55c986652a41321402fe8e41baa5}{animation()}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_a48faeaeb1d8f8ed5927570474d6fe569}{main\+\_\+box()}}, \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}, \mbox{\hyperlink{a00029_acfa13f24e1780367b83bd2531f17d850}{search()}}, \mbox{\hyperlink{a00029_a3ec5c75dfcb02492aed80f705deecb26}{sup\+\_\+update()}}, \mbox{\hyperlink{a00029_a431bc695506f0b701c7e418ff5fc53c8}{supp\+\_\+entry()}}, and \mbox{\hyperlink{a00029_a5e99770f3e0688617aea5914534ded9c}{supp\+\_\+list()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}, and \mbox{\hyperlink{a00029_acfa13f24e1780367b83bd2531f17d850}{search()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/d16/a00029_ab2ecd9a6ceaa8234631a9803607776cf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_ab2ecd9a6ceaa8234631a9803607776cf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_ad2c584e6472d5514c2fa94aea1697bb7}\label{a00029_ad2c584e6472d5514c2fa94aea1697bb7}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!t@{t}}
+\index{t@{t}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{t()}{t()}}
+{\footnotesize\ttfamily int t (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, and \mbox{\hyperlink{a00029_ad2c584e6472d5514c2fa94aea1697bb7}{t()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a1ed6b5480572a72f1d9714aea6539108}{cust\+\_\+entry()}}, \mbox{\hyperlink{a00029_a885611589f6294afada89fe88362e863}{main\+\_\+menu()}}, \mbox{\hyperlink{a00029_a2904e53727e9438de807065db95db971}{medi\+\_\+entry()}}, \mbox{\hyperlink{a00029_aa777bd026911bc07fa05f8a534573291}{medi\+\_\+sale()}}, \mbox{\hyperlink{a00029_abb6f01f09afaf49c585b2ee6bc970cdd}{profit\+\_\+rpt()}}, \mbox{\hyperlink{a00029_a67b812b7a08365e3b2d8516e9688a062}{pur\+\_\+rpt()}}, \mbox{\hyperlink{a00029_acc903cc7748066f4e6c29961be6f060d}{pur\+\_\+rpt\+\_\+daily()}}, \mbox{\hyperlink{a00029_a431bc695506f0b701c7e418ff5fc53c8}{supp\+\_\+entry()}}, \mbox{\hyperlink{a00029_a5e99770f3e0688617aea5914534ded9c}{supp\+\_\+list()}}, \mbox{\hyperlink{a00029_ad2c584e6472d5514c2fa94aea1697bb7}{t()}}, and \mbox{\hyperlink{a00029_aec9f19843278454adbd9bc9dd50f8175}{ventry()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{d5/d16/a00029_ad2c584e6472d5514c2fa94aea1697bb7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_ad2c584e6472d5514c2fa94aea1697bb7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a63c41f7ad60f1ee019659bff9af05431}\label{a00029_a63c41f7ad60f1ee019659bff9af05431}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!update\_stock@{update\_stock}}
+\index{update\_stock@{update\_stock}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{update\_stock()}{update\_stock()}}
+{\footnotesize\ttfamily void update\+\_\+stock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_a8e4f1f910ada5c00a94ac0745a5e1e23}{a}}, \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00042_a2b49545c3aa4c408c0f3f3c765c8407b}{medical\+::bye}}, \mbox{\hyperlink{a00042_a5d116292c55095d7ea7624d180aea661}{medical\+::cost}}, \mbox{\hyperlink{a00014_a358d2e2397ca11ccd17553e3c40e7901}{exit()}}, \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}, \mbox{\hyperlink{a00042_a7bef61f38e8688be5d1122534866a719}{medical\+::id}}, \mbox{\hyperlink{a00042_acf3f614660fd92e47d46d787a3d1887d}{medical\+::medi\+\_\+name}}, \mbox{\hyperlink{a00029_aa79194a5486deb48ea2806f4043033a7}{ptr}}, \mbox{\hyperlink{a00042_a3c55dfeb40ac991606f011d5f0127b8e}{medical\+::qty}}, \mbox{\hyperlink{a00042_a1a607749506654eaba1105fa2b0c2e5f}{medical\+::quantity}}, \mbox{\hyperlink{a00042_a166606eadad0fce42f795dc65f2d56cf}{medical\+::sale}}, \mbox{\hyperlink{a00029_a2e80494afb367a3d3b88bf6a6caf4422}{temp}}, \mbox{\hyperlink{a00042_a9f1f96eba1aede0b4dc433b98fbb3672}{medical\+::total}}, \mbox{\hyperlink{a00042_ae2cbafe93d4973b5fed5bc9324f764af}{medical\+::unit}}, and \mbox{\hyperlink{a00029_adfce14539463c64e68cd82af8d8e8fad}{x}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_af482c6562bb2350ab4bc326319f4a765}{stock()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{d5/d16/a00029_a63c41f7ad60f1ee019659bff9af05431_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_a63c41f7ad60f1ee019659bff9af05431_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_aec9f19843278454adbd9bc9dd50f8175}\label{a00029_aec9f19843278454adbd9bc9dd50f8175}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!ventry@{ventry}}
+\index{ventry@{ventry}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{ventry()}{ventry()}}
+{\footnotesize\ttfamily void ventry (\begin{DoxyParamCaption}\item[{char}]{t\mbox{[}$\,$\mbox{]},  }\item[{int}]{code }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}, and \mbox{\hyperlink{a00029_ad2c584e6472d5514c2fa94aea1697bb7}{t()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a1ed6b5480572a72f1d9714aea6539108}{cust\+\_\+entry()}}, \mbox{\hyperlink{a00029_a20aeb1971c3cc4b65916cf9bae9ba161}{cust\+\_\+update()}}, \mbox{\hyperlink{a00029_a2904e53727e9438de807065db95db971}{medi\+\_\+entry()}}, \mbox{\hyperlink{a00029_aa777bd026911bc07fa05f8a534573291}{medi\+\_\+sale()}}, \mbox{\hyperlink{a00029_a3ec5c75dfcb02492aed80f705deecb26}{sup\+\_\+update()}}, and \mbox{\hyperlink{a00029_a431bc695506f0b701c7e418ff5fc53c8}{supp\+\_\+entry()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{d5/d16/a00029_aec9f19843278454adbd9bc9dd50f8175_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d16/a00029_aec9f19843278454adbd9bc9dd50f8175_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_afa9cfee312a432cac05d5539e02c528b}\label{a00029_afa9cfee312a432cac05d5539e02c528b}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!wbox@{wbox}}
+\index{wbox@{wbox}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{wbox()}{wbox()}}
+{\footnotesize\ttfamily void wbox (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, and \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a236e454e493fc9b262f746305660a2eb}{welcome()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{d5/d16/a00029_afa9cfee312a432cac05d5539e02c528b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{d5/d16/a00029_afa9cfee312a432cac05d5539e02c528b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00029_a236e454e493fc9b262f746305660a2eb}\label{a00029_a236e454e493fc9b262f746305660a2eb}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!welcome@{welcome}}
+\index{welcome@{welcome}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{welcome()}{welcome()}}
+{\footnotesize\ttfamily void welcome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_acb559820d9ca11295b4500f179ef6392}{i}}, and \mbox{\hyperlink{a00029_afa9cfee312a432cac05d5539e02c528b}{wbox()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{d5/d16/a00029_a236e454e493fc9b262f746305660a2eb_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{a00029_a8e4f1f910ada5c00a94ac0745a5e1e23}\label{a00029_a8e4f1f910ada5c00a94ac0745a5e1e23}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!a@{a}}
+\index{a@{a}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily char a\mbox{[}10\mbox{]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00014_a10fa2f4d7f7a83703767accc6af0d13c}{d\+\_\+quan()}}, \mbox{\hyperlink{a00014_a52bc9274580034d811ea3e7e635804d7}{d\+\_\+rate()}}, \mbox{\hyperlink{a00029_a2904e53727e9438de807065db95db971}{medi\+\_\+entry()}}, \mbox{\hyperlink{a00029_aa777bd026911bc07fa05f8a534573291}{medi\+\_\+sale()}}, \mbox{\hyperlink{a00029_a63c41f7ad60f1ee019659bff9af05431}{update\+\_\+stock()}}, and \mbox{\hyperlink{a00014_aa0da58e4b3f3f1fdfe066808c36da7a3}{window()}}.
+
+\mbox{\Hypertarget{a00029_ae458264d7b7cdd3439fd12c93be3df2f}\label{a00029_ae458264d7b7cdd3439fd12c93be3df2f}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!bil@{bil}}
+\index{bil@{bil}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{bil}{bil}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{a00054}{bill}} bil}
+
+
+
+Referenced by \mbox{\hyperlink{a00029_adf0f03a768c327f84e6c1749ea46d448}{bill()}}, and \mbox{\hyperlink{a00029_aa777bd026911bc07fa05f8a534573291}{medi\+\_\+sale()}}.
+
+\mbox{\Hypertarget{a00029_afd9018d32867a27a7ce20ae665e80462}\label{a00029_afd9018d32867a27a7ce20ae665e80462}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!coord@{coord}}
+\index{coord@{coord}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{coord}{coord}}
+{\footnotesize\ttfamily COORD coord = \{ 0, 0 \}}
+
+
+
+Referenced by \mbox{\hyperlink{a00029_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}.
+
+\mbox{\Hypertarget{a00029_acb559820d9ca11295b4500f179ef6392}\label{a00029_acb559820d9ca11295b4500f179ef6392}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!i@{i}}
+\index{i@{i}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily int i}
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a039d55c986652a41321402fe8e41baa5}{animation()}}, \mbox{\hyperlink{a00014_adf0f03a768c327f84e6c1749ea46d448}{bill()}}, \mbox{\hyperlink{a00029_a74086c19c4e1eba47228ef1e62227e50}{box()}}, \mbox{\hyperlink{a00029_a9e518ba024db6fc9ff8d69bdc4d75f79}{box1()}}, \mbox{\hyperlink{a00029_ae5545c8c6e7283029407cd2d721f39f6}{cust\+\_\+list()}}, \mbox{\hyperlink{a00029_a20aeb1971c3cc4b65916cf9bae9ba161}{cust\+\_\+update()}}, \mbox{\hyperlink{a00014_ab09a9400ad0e5a6ef98cca1ddf7770ea}{d\+\_\+all()}}, \mbox{\hyperlink{a00014_aad99d5280f280b0535811749f593135d}{d\+\_\+code()}}, \mbox{\hyperlink{a00014_abaee5cca5835ef2be031310b46c94c96}{d\+\_\+mainmenu()}}, \mbox{\hyperlink{a00014_a10fa2f4d7f7a83703767accc6af0d13c}{d\+\_\+quan()}}, \mbox{\hyperlink{a00014_a52bc9274580034d811ea3e7e635804d7}{d\+\_\+rate()}}, \mbox{\hyperlink{a00014_a23a8c2238396260e437274d42bfdadd3}{d\+\_\+search()}}, \mbox{\hyperlink{a00014_a2da9c7920273c1b6cdbd6e42af62fa7d}{dbill()}}, \mbox{\hyperlink{a00014_a6bf336feb457df46e5538d3676af4d70}{dis\+\_\+con()}}, \mbox{\hyperlink{a00014_a672aea1190b1ade3cb79b5b068615b61}{display()}}, \mbox{\hyperlink{a00029_a9c5bfef579a494196b6100ab478c6681}{lbox()}}, \mbox{\hyperlink{a00029_ae66f6b31b5ad750f1fe042a706a4e3d4}{main()}}, \mbox{\hyperlink{a00029_a48faeaeb1d8f8ed5927570474d6fe569}{main\+\_\+box()}}, \mbox{\hyperlink{a00029_aa777bd026911bc07fa05f8a534573291}{medi\+\_\+sale()}}, \mbox{\hyperlink{a00029_a834e67bf52e80b33d850e2ebc7533fb4}{medi\+\_\+search()}}, \mbox{\hyperlink{a00029_a2c5e292079908d89dc77cae01b55415e}{search\+\_\+cid()}}, \mbox{\hyperlink{a00029_af70abcd650764333e5aad7038d1a0577}{search\+\_\+cname()}}, \mbox{\hyperlink{a00029_a852e86c180b2d2c06d691c9043664956}{search\+\_\+id()}}, \mbox{\hyperlink{a00029_a3cd4ad50ed0a463ca93d117a6ab7f10b}{search\+\_\+name()}}, \mbox{\hyperlink{a00029_af482c6562bb2350ab4bc326319f4a765}{stock()}}, \mbox{\hyperlink{a00029_a3ec5c75dfcb02492aed80f705deecb26}{sup\+\_\+update()}}, \mbox{\hyperlink{a00029_a5e99770f3e0688617aea5914534ded9c}{supp\+\_\+list()}}, \mbox{\hyperlink{a00029_a63c41f7ad60f1ee019659bff9af05431}{update\+\_\+stock()}}, \mbox{\hyperlink{a00029_aec9f19843278454adbd9bc9dd50f8175}{ventry()}}, \mbox{\hyperlink{a00029_afa9cfee312a432cac05d5539e02c528b}{wbox()}}, \mbox{\hyperlink{a00029_a236e454e493fc9b262f746305660a2eb}{welcome()}}, and \mbox{\hyperlink{a00014_aa0da58e4b3f3f1fdfe066808c36da7a3}{window()}}.
+
+\mbox{\Hypertarget{a00029_aef00891a7389583b8ecc010fe8717166}\label{a00029_aef00891a7389583b8ecc010fe8717166}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!p\_r@{p\_r}}
+\index{p\_r@{p\_r}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{p\_r}{p\_r}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{a00062}{purchase\+\_\+report}} p\+\_\+r}
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a2904e53727e9438de807065db95db971}{medi\+\_\+entry()}}, \mbox{\hyperlink{a00029_a67b812b7a08365e3b2d8516e9688a062}{pur\+\_\+rpt()}}, and \mbox{\hyperlink{a00029_acc903cc7748066f4e6c29961be6f060d}{pur\+\_\+rpt\+\_\+daily()}}.
+
+\mbox{\Hypertarget{a00029_af1c22d3cf78bc4d36a93769ee70a9c90}\label{a00029_af1c22d3cf78bc4d36a93769ee70a9c90}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!pr\_r@{pr\_r}}
+\index{pr\_r@{pr\_r}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{pr\_r}{pr\_r}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{a00066}{profit\+\_\+report}} pr\+\_\+r}
+
+
+
+Referenced by \mbox{\hyperlink{a00029_aa777bd026911bc07fa05f8a534573291}{medi\+\_\+sale()}}, and \mbox{\hyperlink{a00029_abb6f01f09afaf49c585b2ee6bc970cdd}{profit\+\_\+rpt()}}.
+
+\mbox{\Hypertarget{a00029_aa79194a5486deb48ea2806f4043033a7}\label{a00029_aa79194a5486deb48ea2806f4043033a7}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!ptr@{ptr}}
+\index{ptr@{ptr}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{ptr}{ptr}}
+{\footnotesize\ttfamily FILE$\ast$ ptr}
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a2904e53727e9438de807065db95db971}{medi\+\_\+entry()}}, \mbox{\hyperlink{a00029_aa777bd026911bc07fa05f8a534573291}{medi\+\_\+sale()}}, and \mbox{\hyperlink{a00029_a63c41f7ad60f1ee019659bff9af05431}{update\+\_\+stock()}}.
+
+\mbox{\Hypertarget{a00029_aa31860e65a1b30e70af09ecef7b86122}\label{a00029_aa31860e65a1b30e70af09ecef7b86122}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!ptr1@{ptr1}}
+\index{ptr1@{ptr1}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{ptr1}{ptr1}}
+{\footnotesize\ttfamily FILE$\ast$ ptr1}
+
+
+
+Referenced by \mbox{\hyperlink{a00029_ae5545c8c6e7283029407cd2d721f39f6}{cust\+\_\+list()}}, \mbox{\hyperlink{a00029_a20aeb1971c3cc4b65916cf9bae9ba161}{cust\+\_\+update()}}, \mbox{\hyperlink{a00029_aa777bd026911bc07fa05f8a534573291}{medi\+\_\+sale()}}, \mbox{\hyperlink{a00029_a834e67bf52e80b33d850e2ebc7533fb4}{medi\+\_\+search()}}, \mbox{\hyperlink{a00029_ab052b833376161ca1ab9f7653e8be73a}{remainder\+Qty()}}, \mbox{\hyperlink{a00029_a2c5e292079908d89dc77cae01b55415e}{search\+\_\+cid()}}, \mbox{\hyperlink{a00029_af70abcd650764333e5aad7038d1a0577}{search\+\_\+cname()}}, \mbox{\hyperlink{a00029_a3cd4ad50ed0a463ca93d117a6ab7f10b}{search\+\_\+name()}}, \mbox{\hyperlink{a00029_af482c6562bb2350ab4bc326319f4a765}{stock()}}, \mbox{\hyperlink{a00029_a3ec5c75dfcb02492aed80f705deecb26}{sup\+\_\+update()}}, and \mbox{\hyperlink{a00029_a5e99770f3e0688617aea5914534ded9c}{supp\+\_\+list()}}.
+
+\mbox{\Hypertarget{a00029_aaffeb0840defdc8b6334d3f897216be2}\label{a00029_aaffeb0840defdc8b6334d3f897216be2}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!ptrbill@{ptrbill}}
+\index{ptrbill@{ptrbill}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{ptrbill}{ptrbill}}
+{\footnotesize\ttfamily FILE$\ast$ ptrbill}
+
+
+
+Referenced by \mbox{\hyperlink{a00029_adf0f03a768c327f84e6c1749ea46d448}{bill()}}.
+
+\mbox{\Hypertarget{a00029_ad442d3499cf22a71e4dceca3e740846f}\label{a00029_ad442d3499cf22a71e4dceca3e740846f}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!ptrp\_r@{ptrp\_r}}
+\index{ptrp\_r@{ptrp\_r}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{ptrp\_r}{ptrp\_r}}
+{\footnotesize\ttfamily FILE$\ast$ ptrp\+\_\+r}
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a2904e53727e9438de807065db95db971}{medi\+\_\+entry()}}, \mbox{\hyperlink{a00029_a67b812b7a08365e3b2d8516e9688a062}{pur\+\_\+rpt()}}, and \mbox{\hyperlink{a00029_acc903cc7748066f4e6c29961be6f060d}{pur\+\_\+rpt\+\_\+daily()}}.
+
+\mbox{\Hypertarget{a00029_a071b52393e756c6ab5c380feac24160c}\label{a00029_a071b52393e756c6ab5c380feac24160c}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!ptrpr\_r@{ptrpr\_r}}
+\index{ptrpr\_r@{ptrpr\_r}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{ptrpr\_r}{ptrpr\_r}}
+{\footnotesize\ttfamily FILE$\ast$ ptrpr\+\_\+r}
+
+
+
+Referenced by \mbox{\hyperlink{a00029_aa777bd026911bc07fa05f8a534573291}{medi\+\_\+sale()}}, and \mbox{\hyperlink{a00029_abb6f01f09afaf49c585b2ee6bc970cdd}{profit\+\_\+rpt()}}.
+
+\mbox{\Hypertarget{a00029_aceb678408b5a75a63b9fbe52f3faae17}\label{a00029_aceb678408b5a75a63b9fbe52f3faae17}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!ptrs\_r@{ptrs\_r}}
+\index{ptrs\_r@{ptrs\_r}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{ptrs\_r}{ptrs\_r}}
+{\footnotesize\ttfamily FILE$\ast$ ptrs\+\_\+r}
+
+
+
+Referenced by \mbox{\hyperlink{a00029_aa777bd026911bc07fa05f8a534573291}{medi\+\_\+sale()}}, \mbox{\hyperlink{a00029_a3d414c641783f76d07d932c9a6c1e1e5}{sale\+\_\+rpt()}}, and \mbox{\hyperlink{a00029_a348367e6a182fa74256fa68fc0bd0759}{sale\+\_\+rpt\+\_\+daily()}}.
+
+\mbox{\Hypertarget{a00029_a75c9d0c153b32f99ea7261a829c5437a}\label{a00029_a75c9d0c153b32f99ea7261a829c5437a}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!s\_r@{s\_r}}
+\index{s\_r@{s\_r}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{s\_r}{s\_r}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{a00058}{sales\+\_\+report}} s\+\_\+r}
+
+
+
+Referenced by \mbox{\hyperlink{a00029_aa777bd026911bc07fa05f8a534573291}{medi\+\_\+sale()}}, \mbox{\hyperlink{a00029_a3d414c641783f76d07d932c9a6c1e1e5}{sale\+\_\+rpt()}}, and \mbox{\hyperlink{a00029_a348367e6a182fa74256fa68fc0bd0759}{sale\+\_\+rpt\+\_\+daily()}}.
+
+\mbox{\Hypertarget{a00029_a2e80494afb367a3d3b88bf6a6caf4422}\label{a00029_a2e80494afb367a3d3b88bf6a6caf4422}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!temp@{temp}}
+\index{temp@{temp}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{temp}{temp}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{a00042}{medical}} temp}
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a2904e53727e9438de807065db95db971}{medi\+\_\+entry()}}, \mbox{\hyperlink{a00029_aa777bd026911bc07fa05f8a534573291}{medi\+\_\+sale()}}, \mbox{\hyperlink{a00029_a834e67bf52e80b33d850e2ebc7533fb4}{medi\+\_\+search()}}, \mbox{\hyperlink{a00029_ab052b833376161ca1ab9f7653e8be73a}{remainder\+Qty()}}, \mbox{\hyperlink{a00029_af482c6562bb2350ab4bc326319f4a765}{stock()}}, and \mbox{\hyperlink{a00029_a63c41f7ad60f1ee019659bff9af05431}{update\+\_\+stock()}}.
+
+\mbox{\Hypertarget{a00029_a5c99dd2f37e157da891009961ee11c71}\label{a00029_a5c99dd2f37e157da891009961ee11c71}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!temp1@{temp1}}
+\index{temp1@{temp1}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{temp1}{temp1}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{a00046}{supplier}} temp1}
+
+
+
+Referenced by \mbox{\hyperlink{a00029_af785d65f8356a9b833b483d5e24b78cb}{getsupp\+\_\+id()}}, \mbox{\hyperlink{a00029_a852e86c180b2d2c06d691c9043664956}{search\+\_\+id()}}, \mbox{\hyperlink{a00029_a3cd4ad50ed0a463ca93d117a6ab7f10b}{search\+\_\+name()}}, \mbox{\hyperlink{a00029_a3ec5c75dfcb02492aed80f705deecb26}{sup\+\_\+update()}}, \mbox{\hyperlink{a00029_a431bc695506f0b701c7e418ff5fc53c8}{supp\+\_\+entry()}}, and \mbox{\hyperlink{a00029_a5e99770f3e0688617aea5914534ded9c}{supp\+\_\+list()}}.
+
+\mbox{\Hypertarget{a00029_a2c3372ad6b469d96fbdc9786e01d76c4}\label{a00029_a2c3372ad6b469d96fbdc9786e01d76c4}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!temp\_c@{temp\_c}}
+\index{temp\_c@{temp\_c}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{temp\_c}{temp\_c}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{a00050}{customer}} temp\+\_\+c}
+
+
+
+Referenced by \mbox{\hyperlink{a00029_a1ed6b5480572a72f1d9714aea6539108}{cust\+\_\+entry()}}, \mbox{\hyperlink{a00029_ae5545c8c6e7283029407cd2d721f39f6}{cust\+\_\+list()}}, \mbox{\hyperlink{a00029_a20aeb1971c3cc4b65916cf9bae9ba161}{cust\+\_\+update()}}, \mbox{\hyperlink{a00029_a3a59181ef40c199703c86a98b9e84be6}{getcust\+\_\+id()}}, \mbox{\hyperlink{a00029_aa777bd026911bc07fa05f8a534573291}{medi\+\_\+sale()}}, \mbox{\hyperlink{a00029_a2c5e292079908d89dc77cae01b55415e}{search\+\_\+cid()}}, and \mbox{\hyperlink{a00029_af70abcd650764333e5aad7038d1a0577}{search\+\_\+cname()}}.
+
+\mbox{\Hypertarget{a00029_adfce14539463c64e68cd82af8d8e8fad}\label{a00029_adfce14539463c64e68cd82af8d8e8fad}} 
+\index{MedicalStoreManagement.c@{MedicalStoreManagement.c}!x@{x}}
+\index{x@{x}!MedicalStoreManagement.c@{MedicalStoreManagement.c}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{a00042}{medical}} x\mbox{[}20\mbox{]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00014_a72f10c9e9a40d72ecf1205c43153b9ca}{add()}}, \mbox{\hyperlink{a00014_adf0f03a768c327f84e6c1749ea46d448}{bill()}}, \mbox{\hyperlink{a00014_ae4a4103e16855b65f81c8baf06575982}{check()}}, \mbox{\hyperlink{a00014_aad99d5280f280b0535811749f593135d}{d\+\_\+code()}}, \mbox{\hyperlink{a00014_a13120ea5788aaacf44a89b193a0cceef}{del()}}, \mbox{\hyperlink{a00014_ab8b6e9eacc0f70fa37f299c01cc80263}{edit()}}, \mbox{\hyperlink{a00014_ae824443b3f661414ba1f2718e17fe97d}{gotoxy()}}, \mbox{\hyperlink{a00029_aa777bd026911bc07fa05f8a534573291}{medi\+\_\+sale()}}, and \mbox{\hyperlink{a00029_a63c41f7ad60f1ee019659bff9af05431}{update\+\_\+stock()}}.
+
